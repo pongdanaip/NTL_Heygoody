@@ -1,0 +1,39 @@
+.masterpage-vol1 {
+    text-decoration: none;
+    color: var(--1-txt-1-black);
+    display: flex;
+    align-items: center;
+}
+
+.master-manage-account .smile-logo > .noto-s-bold,
+.master-manage-account .smile-logo > .noto-s-bold:hover {
+    color: var(--1-txt-1-black);
+}
+.masterpage-vol1:hover {
+    text-decoration: none;
+    color: var(--btn-5-hover);
+}
+.masterpage-vol1 > i {
+    display: inline-block;
+}
+.masterpage-vol1 > span {
+    display: inline-block;
+}
+.masterpage-vol1 > .top-icon-user {
+    width: 36px;
+    height: 36px;
+    background-image: url(../Images/icon-other-grey-member.svg);
+}
+.masterpage-vol1:hover > .top-icon-user {
+    width: 36px;
+    height: 36px;
+    background-image: url(../Images/icon-other-green-member.svg);
+}
+
+.masterpage-vol1 > .master-manage-account{
+    top: 33px;
+}
+
+.menu-user-login.masterpage-vol1 {
+    justify-content: flex-end;
+}

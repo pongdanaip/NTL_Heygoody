@@ -1,0 +1,213 @@
+/* .fn-modal-loading > .modal-dialog.modal-fullscreen {
+  background-color: rgba(249, 249, 244, 0.5);
+} */
+
+/*POPUP LOADING*/
+.fn-modal-loading > .modal-dialog {
+    max-width: none;
+    margin: 0;
+}
+
+.fn-modal-loading .modal-dialog > .modal-content {
+    border-radius: unset;
+    padding: 0;
+}
+
+.fn-modal-loading .modal-dialog.modal-fullscreen > .modal-content {
+    background-color: rgba(249, 249, 244, 0.98);
+    /* opacity: 0.98; */
+}
+
+.modal-backdrop.modal-backdrop-loading {
+    background-color: #fff;
+}
+
+.modal-backdrop.show.modal-backdrop-loading {
+    opacity: 0;
+}
+
+.fn-loading {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+    .fn-loading > p {
+        font: normal var(--noto-xxxs) var(--font-family-Noto);
+        margin: 12px 0 0 0;
+    }
+
+    .fn-loading.loading-payment > p {
+        font: bold var(--noto-xxs) var(--font-family-Noto);
+        margin: 16px 0 8px 0;
+    }
+
+    .fn-loading.loading-payment > span {
+        font: normal var(--noto-xxs) var(--font-family-Noto);
+        margin: 0 0 0 0;
+    }
+
+    .fn-loading > .rotator {
+        animation: rotate 2s linear infinite;
+        position: relative;
+        height: 54px;
+        width: 54px;
+    }
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fn-loading .rotator > .path {
+    stroke-dasharray: 1, 144.51314;
+    stroke-dashoffset: 0;
+    fill: none;
+    animation: stroke 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    -moz-animation: stroke 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    -webkit-animation: stroke 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    -o-animation: stroke 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+@-webkit-keyframes stroke {
+    0% {
+        stroke-dasharray: 1, 144.51314;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 96.24575124, 144.51314;
+        stroke-dashoffset: 48.12287562;
+    }
+
+    100% {
+        stroke-dasharray: 96.332459124, 144.51314;
+        stroke-dashoffset: -143.51314;
+    }
+}
+
+@keyframes stroke {
+    0% {
+        stroke-dasharray: 1, 144.51314;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 96.24575124, 144.51314;
+        stroke-dashoffset: 48.12287562;
+    }
+
+    100% {
+        stroke-dasharray: 96.332459124, 144.51314;
+        stroke-dashoffset: -143.51314;
+    }
+}
+
+@-moz-keyframes stroke {
+    0% {
+        stroke-dasharray: 1, 144.51314;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 96.24575124, 144.51314;
+        stroke-dashoffset: 48.12287562;
+    }
+
+    100% {
+        stroke-dasharray: 96.332459124, 144.51314;
+        stroke-dashoffset: -143.51314;
+    }
+}
+
+@-o-keyframes stroke {
+    0% {
+        stroke-dasharray: 1, 144.51314;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 96.24575124, 144.51314;
+        stroke-dashoffset: 48.12287562;
+    }
+
+    100% {
+        stroke-dasharray: 96.332459124, 144.51314;
+        stroke-dashoffset: -143.51314;
+    }
+}
+
+@keyframes color {
+    100%, 0%, 24% {
+        stroke: var(--tone-2-mint-4);
+    }
+
+    25%, 49% {
+        stroke: var(--tone-1-orange-4);
+    }
+
+    50%, 74% {
+        stroke: var(--tone-2-mint-4);
+    }
+
+    75%, 99% {
+        stroke: var(--tone-4-violet-4);
+    }
+}
+
+@-webkit-keyframes color {
+    100%, 0%, 24% {
+        stroke: var(--tone-2-mint-4);
+    }
+
+    25%, 49% {
+        stroke: var(--tone-1-orange-4);
+    }
+
+    50%, 74% {
+        stroke: var(--tone-2-mint-4);
+    }
+
+    75%, 99% {
+        stroke: var(--tone-4-violet-4);
+    }
+}
+
+@-o-keyframes color {
+    100%, 0%, 24% {
+        stroke: var(--tone-2-mint-4);
+    }
+
+    25%, 49% {
+        stroke: var(--tone-1-orange-4);
+    }
+
+    50%, 74% {
+        stroke: var(--tone-2-mint-4);
+    }
+
+    75%, 99% {
+        stroke: var(--tone-4-violet-4);
+    }
+}
+
+@-moz-keyframes color {
+    100%, 0%, 24% {
+        stroke: var(--tone-2-mint-4);
+    }
+
+    25%, 49% {
+        stroke: var(--tone-1-orange-4);
+    }
+
+    50%, 74% {
+        stroke: var(--tone-2-mint-4);
+    }
+
+    75%, 99% {
+        stroke: var(--tone-4-violet-4);
+    }
+}

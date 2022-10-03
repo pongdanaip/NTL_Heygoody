@@ -1,0 +1,108 @@
+﻿.page-search {
+    padding-top: 56px;
+    padding-bottom: 96px;
+}
+
+    .page-search .form-floating .form-control:focus, .page-search .form-floating .form-control:not(:placeholder-shown) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .page-search .form-floating {
+        margin-top: 0px;
+        margin-bottom: 24px;
+    }
+
+        .page-search .form-floating .form-control::placeholder {
+            color: #707070;
+        }
+
+.search-cap {
+    color: #707070;
+}
+
+.search-detail .list-group-item {
+    margin-bottom: 24px;
+}
+
+.search-detail .detail {
+    color: var(--ci-6-teal);
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.search-detail .link {
+    color: var(--1-txt-3-caption);
+    font-size: 12px;
+}
+
+.search-pagination .page-item {
+    max-width: 48px;
+    margin-left: 16px;
+}
+
+    .search-pagination .page-item:first-child {
+        margin-left: 0;
+    }
+
+    .search-pagination .page-item .number-pag {
+        max-width: unset;
+    }
+
+    .search-pagination .page-item:first-child .page-link, .search-pagination .page-item:last-child .page-link {
+        border: solid 1px #13875d;
+    }
+
+    .search-pagination .page-item input, .search-pagination .page-item .page-link {
+        height: 48px;
+        text-align: center;
+        color: #1d1d1d;
+        padding: 11px;
+        border-radius: 8px;
+    }
+
+.highlight-text {
+    background-color: #f9e7ca;
+}
+
+.ui-menu {
+    overflow: hidden;
+    border-radius: 8px;
+    border: solid 1px #bfc7cf;
+    top: 190px !important;
+}
+
+    .ui-menu.ui-widget.ui-widget-content {
+        overflow-y: scroll;
+        height: 242px;
+    }
+
+        .ui-menu.ui-widget.ui-widget-content::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 2px;
+            right: 4px;
+        }
+
+        .ui-menu.ui-widget.ui-widget-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .ui-menu.ui-widget.ui-widget-content::-webkit-scrollbar-thumb {
+            background: var(--line-4-grey);
+        }
+
+
+    .ui-menu .ui-menu-item {
+        padding: 8px 16px;
+    }
+
+        .ui-menu .ui-menu-item .ui-menu-item-wrapper {
+            font-family: var(--font-family-Noto);
+            font-size: 16px;
+        }
+
+        .ui-menu .ui-menu-item .ui-state-active {
+            background-color: transparent;
+            color: var(--tone-7-black-1);
+            border-color: transparent;
+        }

@@ -1,0 +1,73 @@
+/* POPUP */
+
+.modal-dialog {
+    max-width: fit-content;
+    margin: 1.75rem auto;
+}
+
+.modal-dialog > .modal-content {
+    font: var(--sarabun-m) var(--font-family-sarabun);
+    border: none;
+    background-color:  var(--btn-2-white);
+    border-radius: var(--border-rad-popup);
+    padding: var(--p-24) var(--p-20) var(--p-20);
+}
+
+.modal-dialog.fn-modal-1button > .modal-content {
+    width: 320px;
+}
+
+.modal-dialog.fn-modal-2button > .modal-content {
+    width: 320px;
+}
+
+.modal-dialog .modal-content > .modal-header {
+    justify-content: center;
+    border: 0;
+    padding: 0;
+}
+
+.modal-dialog .modal-content > .modal-body {
+    text-align: center;
+    border: 0;
+    padding: 0 2 3 4;
+}
+
+.modal-dialog .modal-content > .modal-body {
+    text-align: center;
+    border: 0;
+    padding: 24px 0 0 0;
+}
+
+.modal-body > .fn-modal-title {
+    font:bold var(--noto-s) var(--font-family-NotoSansThai);
+}
+
+.modal-body > .fn-modal-text {
+    font:normal var(--sarabun-m) var(--font-family-Sarabun);
+}
+
+.modal-dialog .modal-content > .modal-footer {
+    justify-content: center;
+    border: 0;
+    padding: 24px 0 0 0;
+}
+
+.modal-footer > .fn-btn-M {
+    width: 100%;
+}
+.modal-dialog.fn-modal-2button .modal-content > .modal-footer {
+    flex-wrap: nowrap;
+    justify-content: space-between
+}
+.fn-modal-2button .modal-footer > .fn-btn-M {
+    margin: 0;
+    width: calc(50% - 8px);
+    padding: 0;
+}
+
+@media (min-width: 992px){
+    .modal-dialog.fn-modal-2button > .modal-content {
+        width: 384px;
+    }
+}

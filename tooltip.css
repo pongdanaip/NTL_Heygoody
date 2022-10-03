@@ -1,0 +1,143 @@
+/* Tool Tip */
+.fn-tooltip {
+    position: relative;
+    /*display: inline;*/
+}
+
+.fn-tooltip-hide {
+    opacity: 0;
+    transform: 0.1s;
+}
+.fn-tooltip  .fn-tooltip-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    vertical-align: sub;
+    background-color: transparent;
+    background-image: url(../images/tooltip/icon-24-green-info-small.svg);
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    
+}
+.fn-tooltip .fn-tooltip-fake {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: auto;
+    z-index: 9;
+}
+.fn-tooltip .fn-tooltip-block {
+    font: var(--sarabun-s) var(--font-family-sarabun);
+    width: 100%;
+    padding: var(--p-16);
+    border-radius: var(--border-rad-normal);
+    background-color: var(--tone-1-orange-7);
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    transform: translateY(10px);
+
+}
+.fn-tooltip-block.show{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+@media (min-width: 992px) {
+    .fn-tooltip .fn-tooltip-block {
+        width: 320px !important;
+        left: -148px !important;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .fn-tooltip .fn-tooltip-block{
+        width: 100%;
+        left:auto;
+    }
+
+}
+/* .fn-tooltip .fn-tooltip-ab {
+    font: var(--sarabun-s) var(--font-family-sarabun);
+    width: 320px;
+    padding: var(--p-16);
+    border-radius: var(--border-rad-normal);
+    background-color: var(--tone-1-orange-7);
+    margin: -4px 0 3px;
+    visibility: visible;
+    text-align: start;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: -585%;
+    margin-bottom: 6px;
+    opacity: 1;
+}
+
+.input-group > button {
+    border: 1px solid var(--line-2-textfield);
+    background-color: var(--btn-2-white);
+    border-left-color: var(--btn-2-white);
+}
+
+.input-group > button:hover{
+    outline: none;
+    border: 1px solid var(--line-2-textfield);
+    background-color: var(--btn-2-white);
+    border-left-color: var(--btn-2-white);
+}
+
+.input-group > button:focus{
+    outline: none;
+    box-shadow: none;
+    background-color: var(--btn-2-white);
+    border-left-color: var(--btn-2-white);
+} */
+
+.fn-tooltip.fn-tooltip-form > .fn-tooltip-btn {
+    background-image: url(../images/tooltip/icon-24-green-info-large.svg);
+}
+
+.fn-tooltip.fn-tooltip-form > .fn-tooltip-block {
+    opacity: 0;
+    left: 0px !important;
+    top: 0px !important;
+    width: 100% !important;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-5px) !important;
+    position: relative;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+}
+.fn-tooltip.fn-tooltip-form > .fn-tooltip-block.show{
+    opacity: 1;
+    transform: translateY(2px) !important;
+    height: auto;
+    margin-top: 0px !important;
+    visibility: visible;
+    height: 100%;
+   
+}
+
+@media (min-width: 992px) {
+    .fn-tooltip .fn-tooltip-block {
+        width: 320px !important;
+        left: -148px !important;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .fn-tooltip .fn-tooltip-block{
+        width: 100%;
+        left:auto;
+    }
+
+}

@@ -1,0 +1,1074 @@
+.title-styleguide {
+    font: bold var(--en-noto-s) var(--font-family-NotoSans);
+}
+.layout-style {
+     display: flex; 
+     align-items: flex-start;
+     margin: 8px 0 24px; 
+     width: 100%;
+    }
+.layout-title {
+    width: 120px;
+    padding-top: 18px;
+    color: var(--1-txt-1-black);
+    opacity: 0.5;
+    font-weight: bold;
+    
+}
+.layout-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.layout-content .l-column {
+    min-width: 200px;
+    max-width: 33.33%;
+}
+.layput-inputtext .l-column{
+    padding: 0 40px 0 20px;
+    min-width: 400px;
+    max-width: 50.33%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.fn-button {
+    padding: 0 32px;
+    border-radius: var(--border-rad-normal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    box-shadow: none;
+    border: none;
+}
+
+.fn-btn-L {
+    height: 56px;
+    font: bold normal var(--noto-s) var(--font-family-Noto);
+}
+
+.fn-btn-M {
+    font: bold normal var(--noto-xxs) var(--font-family-Noto);
+    height: 48px;
+}
+
+.fn-btn-S {
+    font: bold normal var(--noto-xxs) var(--font-family-Noto);
+    line-height: normal;
+    height: 36px;
+}
+
+.fn-btn-primary {
+    color: var(--btn-2-white);
+    background-color: var(--btn-1-mint);
+    border: 0px;
+}
+
+.fn-btn-secondary {
+    border: solid 1px var(--btn-1-mint);
+    background-color: var(--btn-2-white);
+    color: var(--btn-1-mint);
+}
+
+.fn-btn-white {
+    background-color: var(--btn-2-white);
+    color: var(--btn-1-mint);
+    border: 0px;
+}
+
+.fn-btn-CTA {
+    background-color: none;
+    background-image: linear-gradient(to right, var(--ci-8-logo) 0%, var(--tone-2-mint-1) 100%);
+    color: var(--btn-2-white);
+    border: 0px;
+}
+
+.fn-btn-primary:hover {
+    background-color: var(--btn-5-hover);
+}
+
+.fn-btn-secondary:hover {
+    background-color: var(--btn-6-hover);
+}
+
+.fn-btn-white:hover {
+    background-color: var(--btn-6-hover);
+}
+
+.fn-btn-CTA:hover {
+    background-image: linear-gradient(to right, #188a64 0%, #004b2b 100%);
+}
+
+
+/*Radio Button*/
+.fn-rdo-box {
+    display: inline-block;
+    position: relative;
+    
+}
+
+.fn-rdo-box input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    .fn-rdo-box label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 12px 0 12px 0;
+    }
+    .fn-rdo-box.fn-rdo-box-border label{
+        padding: 12px 20px 12px 8px;
+    }
+    
+    .fn-rdo-box label .check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.fn-rdo-box label .check>span {
+    border: solid 2px var(--line-6-checkbox);
+    background-color: var(--btn-2-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fn-rdo-box input[type="radio"]:checked+label .check>span {
+    box-shadow: inset 0 0 0 2px var(--line-1-active);
+    background-color: var(--btn-2-white);
+    border: 0;
+}
+
+.fn-rdo-box input[type="radio"]:checked+label .check>span::before {
+    content: '';
+    background-color: var(--line-1-active);
+    border-radius: 50%;
+}
+
+.fn-rdo-box.fn-rdo-box-border label {
+    border: solid 1px var(--line-2-textfield);
+    background-color: var(--btn-2-white);
+}
+
+.fn-rdo-box.fn-rdo-box-border label .check {
+    margin-right: 8px;
+}
+
+
+.fn-rdo-box.fn-rdo-box-border input[type="radio"]:checked+label {
+    box-shadow: inset 0 0 0 2px var(--line-1-active);
+    background-color: #edf8f5;
+    border-color: transparent;
+}
+
+.fn-rdo-box.fn-rdo-box-border label .check>span{
+    border: solid 2px var(--line-6-checkbox);
+    background-color: var(--btn-2-white);
+}
+
+.fn-rdo-box.fn-rdo-box-border label.errorempty,
+.fn-rdo-box.fn-rdo-box-border label.errorempty .check>span,
+.fn-rdo-box label.errorempty .check>span {
+    border: solid 2px var(--line-3-error);
+}
+
+.fn-rdo-box.fn-rdo-box-border .fn-valid-feedback {
+    padding: 4px 0 0 16px;
+    margin: 0;
+}
+
+.fn-rdo-box .fn-valid-feedback{
+    padding: 0 0 0 16px;
+    margin-top: -8px;
+}
+
+/* radio with border*/
+.fn-rdo-box.fn-rdo-box-border label:hover {
+    border: solid 1px var(--btn-5-hover);
+    background-color: var(--btn-6-hover);
+}
+
+.fn-rdo-box.fn-rdo-box-border label.errorempty:hover {
+    border: solid 2px var(--line-3-error);
+    background-color: var(--btn-2-white);
+}
+
+.fn-rdo-box.fn-rdo-box-border label:hover .check>span {
+    border: solid 2px var(--line-6-checkbox);
+    background-color: var(--btn-2-white);
+}
+
+.fn-rdo-box label:hover .check>span {
+    border: solid 2px var(--btn-5-hover);
+    background-color: var(--btn-2-white);
+}
+
+
+
+/*fn-rdo-text*/
+.fn-rdo-box.fn-rdo-text label {
+    text-align: left;
+    display: block;
+}
+.fn-rdo-box.fn-rdo-l.fn-rdo-text label {
+    padding: 18px 16px;
+    min-width: 142px;
+    height: 64px;
+}
+.fn-rdo-box.fn-rdo-m.fn-rdo-text label {
+    padding: 12px 16px;
+    min-width: 116px;
+    height: 48px;
+}
+
+
+/* radio L */
+.fn-rdo-box.fn-rdo-l{
+    font: 500 normal var(--noto-xs) var(--font-family-Noto);
+}
+.fn-rdo-box.fn-rdo-l label{
+    height: 64px;
+}
+.fn-rdo-box.fn-rdo-l label .check{
+    width: 48px;
+    height: 48px;
+}
+.fn-rdo-box.fn-rdo-l label .check>span {
+    width: 32px;
+    height: 32px;
+}
+.fn-rdo-box.fn-rdo-l input[type="radio"]:checked+label .check>span::before {
+    width: 20px;
+    height: 20px;
+}
+
+/* radio M */
+.fn-rdo-box.fn-rdo-m {
+    font: 500 normal var(--noto-xxs) var(--font-family-Noto);
+}
+.fn-rdo-box.fn-rdo-m label{
+    height: 48px;
+}
+.fn-rdo-box.fn-rdo-m label .check {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    margin-right: 4px;
+}
+
+.fn-rdo-box.fn-rdo-m label .check>span {
+    width: 24px;
+    height: 24px;
+    border: solid 1px var(--line-6-checkbox);
+}
+.fn-rdo-box.fn-rdo-m label:hover .check>span {
+    border: solid 1px var(--btn-5-hover);
+}
+
+.fn-rdo-box.fn-rdo-m input[type="radio"]:checked+label .check>span::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+}
+
+
+
+/* Checkbox */
+.fn-checkbox {
+    display: inline-block;
+    position: relative;
+}
+
+.fn-checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fn-checkbox label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px 8px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fn-checkbox label .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fn-checkbox label .check>span{
+    border: solid 2px var(--line-6-checkbox);
+    background-color: var(--btn-2-white);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fn-checkbox input[type="checkbox"]:checked+label .check>span{
+    box-shadow: inset 0 0 0 2px var(--line-1-active);
+    background-color: var(--line-1-active);
+    border-color: transparent;
+}
+
+.fn-checkbox input[type="checkbox"]:checked+label .check>span::before,
+.fn-checkbox.fn-checkbox-l input[type="checkbox"]:checked+label .check>span::before {
+    content: '';
+    background-image: url(../images/icon-24-white-checkbox-right.svg);
+    background-size: contain;
+    background-color: var(--line-1-active);
+}
+
+.fn-checkbox.fn-checkbox-border label{
+    border: solid 1px var(--line-2-textfield);
+    background-color: var(--btn-2-white);
+}
+
+.fn-checkbox.fn-checkbox-border label .check {
+    margin-right: 8px;
+}
+
+.fn-checkbox.fn-checkbox-border input[type="checkbox"]:checked+label {
+    box-shadow: inset 0 0 0 2px var(--line-1-active);
+    background-color: #edf8f5;
+    border-color: transparent !important;
+}
+
+.fn-checkbox.fn-checkbox-border label .check>span {
+    /*border: solid 2px var(--line-6-checkbox);*/
+
+    background-color: var(--btn-2-white);
+}
+
+
+/*fn-Checkbox-text*/
+.fn-checkbox.fn-checkbox-text label {
+    text-align: left;
+    display: block;
+}
+.fn-checkbox.fn-checkbox-l.fn-checkbox-text label {
+    padding: 18px 16px;
+    min-width: 142px;
+}
+.fn-checkbox.fn-checkbox-m.fn-checkbox-text label {
+    padding: 12px 16px;
+    min-width: 116px;
+}
+
+/*Checkbox L*/
+.fn-checkbox.fn-checkbox-l {
+    font: 500 normal var(--noto-xs) var(--font-family-Noto);
+}
+.fn-checkbox.fn-checkbox-l label{
+    height: 64px;
+}
+.fn-checkbox.fn-checkbox-l label .check {
+    width: 48px;
+    height: 48px;
+}
+.fn-checkbox.fn-checkbox-l label .check>span {
+    width: 32px;
+    height: 32px;
+}
+.fn-checkbox.fn-checkbox-l input[type="checkbox"]:checked+label .check>span::before {
+    width: 24px;
+    height: 24px;
+}
+
+/* checkbox M */
+.fn-checkbox.fn-checkbox-m {
+     font: 500 normal var(--noto-xxs) var(--font-family-Noto); 
+}
+.fn-checkbox.fn-checkbox-m label{
+    height: 48px;
+}
+.fn-checkbox.fn-checkbox-m label .check>span{
+    border-radius: 4px;
+}
+.fn-checkbox.fn-checkbox-m label .check {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    margin-right: 4px;
+}
+
+.fn-checkbox.fn-checkbox-m label .check>span {
+    width: 24px;
+    height: 24px;
+    border: solid 1px var(--line-6-checkbox);
+}
+
+.fn-checkbox.fn-checkbox-m input[type="checkbox"]:checked+label .check>span::before {
+    content: '';
+    background-image: url(../images/icon-24-white-checkbox-right.svg);
+    width: 18px;
+    height: 18px;
+}
+
+/*Checkbox S*/
+.fn-checkbox-s{
+    font: bold normal var(--noto-xxs) var(--font-family-Noto);
+    color: var(--btn-1-mint);
+}
+.fn-checkbox.fn-checkbox-s label .check {
+    width: 36px;
+    height: 36px;
+    padding: 0 4px;
+}
+.fn-checkbox.fn-checkbox-s input[type="checkbox"]:checked+label .check>span::before {
+    content: '';
+    background-image: url(../images/icon-24-white-checkbox-right.svg);
+    width: 18px;
+    height: 18px;
+}
+.fn-checkbox.fn-checkbox-s label .check>span {
+    width: 24px;
+    height: 24px;
+    border: solid 1px var(--line-6-checkbox);
+}
+.fn-checkbox.fn-checkbox-s label:hover .check>span {
+    border: solid 1px var(--btn-5-hover);
+    background-color: var(--btn-2-white);
+}
+
+/*Checkbox border*/
+.fn-checkbox.fn-checkbox-border label:hover {
+    background-color: var(--btn-6-hover);
+    border: solid 1px var(--btn-5-hover) !important;
+}
+
+.fn-checkbox.fn-checkbox-border label.errorempty:hover {
+    border: solid 2px var(--line-3-error);
+    background-color: var(--btn-2-white);
+}
+
+.fn-checkbox.fn-checkbox-border label:hover .check>span {
+    border: solid 2px var(--line-6-checkbox);
+    background-color: var(--btn-2-white);
+}
+
+.fn-checkbox label:hover .check>span {
+    border: solid 2px var(--btn-5-hover);
+    background-color: var(--btn-2-white);
+}
+
+.fn-checkbox.fn-checkbox-m label:hover .check>span {
+    border: 1px solid var(--line-6-checkbox);
+}
+/*Checkbox disable*/
+.fn-checkbox input[type="checkbox"]:disabled + label .check>span{
+  border: 1px solid var(--btn-4-disabletext);
+  background-color: var(--btn-3-disablebg);
+}
+.fn-checkbox input[type="checkbox"]:disabled + label .check+span{
+    color: var(--btn-4-disabletext);
+}
+.fn-checkbox.fn-checkbox-wide label{
+    padding: 8px 32px;
+}
+/*Checkbox error*/
+.fn-checkbox.fn-checkbox-border.errorempty label {
+    /*border: solid 2px var(--line-3-error) !important;*/
+    box-shadow: inset 0 0 0 2px var(--line-3-error);
+}
+.fn-checkbox.fn-checkbox-border.errorempty label,
+.fn-checkbox.errorempty  label .check>span{
+    border-color:  var(--line-3-error) ;
+}
+.fn-checkbox.fn-checkbox-border.errorempty label:hover,
+.fn-checkbox.fn-checkbox-border.errorempty label:hover .check>span,
+.fn-checkbox.errorempty  label:hover .check>span {
+    /*border: solid 2px var(--line-3-error) !important;*/
+    box-shadow: none;
+}
+
+.fn-checkbox.fn-checkbox-border .fn-valid-feedback {
+    padding: 4px 0 0 16px;
+    margin: 0;
+}
+
+.fn-checkbox .fn-valid-feedback{
+    padding: 0 0 0 16px;
+    margin-top: -8px;
+}
+
+
+
+
+/*Input text*/
+.form-control {
+    font-size: var(--noto-xxs) !important;
+    font-family: var(--font-family-Noto) !important;
+    font-weight: 500 !important;
+    line-height: normal;
+}
+
+.fn-form-text .form-control {
+    padding: 19px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--line-2-textfield);
+    color: var(--1-txt-1-black);
+    background-color: var(--btn-2-white);
+    height: 62px;
+}
+
+.fn-form-password:not(.fn-form-text) .form-control {
+    padding: 19px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--line-2-textfield);
+    color: var(--1-txt-1-black);
+    background-color: var(--btn-2-white);
+    height: 62px;
+}
+
+.form-floating>.form-control:focus {
+    box-shadow: inset 0 0 0 2px var(--line-1-active);
+}
+
+.form-floating>label {
+     font: 500 normal var(--noto-xxs) var(--font-family-Noto); 
+    padding: 19px 16px;
+    line-height: normal;
+    color: var(--1-txt-5-placeholder);
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select:focus~label {
+    opacity: 1;
+    color: var(--line-1-active);
+    transform: scale(.875) translateY(-11px) translateX(2.4px);
+}
+
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.form-floating>.form-control:not(:focus)~label {
+    color: var(--1-txt-5-placeholder);
+}
+
+.form-floating > .form-control:disabled {
+    color: var(--1-txt-5-placeholder);
+    outline: none;
+    background-color: var(--btn-3-disablebg);
+}
+
+.form-floating.fn-form-select>.form-select:disabled {
+    color: var(--1-txt-5-placeholder);
+    outline: none;
+    background-color: var(--tone-7-black-6);
+    z-index: 997;
+}
+
+.form-floating>.form-err {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--line-3-error);
+}
+
+.form-floating>.form-control.form-err:not(:focus)~label {
+    color: var(--syst-1-error);
+}
+
+
+.fn-form-text span[data-clear-input] {
+    position: absolute;
+    right: 16px;
+    top: 19px;
+    z-index: 99;
+    display: none;
+}
+
+
+
+/**/
+.dropdownemail {
+    margin: 6px 0 0;
+    border-radius: 8px;
+    border: solid 1px #bfc7cf;
+    list-style: none;
+    padding: 0;
+    background: var(--bg-9-white);
+    font: normal normal var(--noto-xxs) var(--font-family-Noto); 
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.dropdownemail>li {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.dropdownemail>li:hover,
+.dropdownemail>li[aria-selected="true"] {
+    background-color: #edf6f2;
+    color: var(--1-txt-1-blacklack);
+}
+
+
+/* Select option*/
+.form-select {
+    background-image: none;
+}
+
+.fn-bgselect-grey > .fn-valid-feedback {
+    background-color: var(--bg-4-beige-40);
+}
+
+.form-floating.fn-form-select{
+    background-color: var(--btn-2-white);
+}
+
+.form-floating.fn-form-select > .form-select {
+    position: relative;
+    z-index: 999;
+    background: transparent;
+}
+
+.form-floating.fn-form-select::after {
+    content: "";
+    background-image: url(../images/icon-24-grey-down.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 998;
+    right: 18px;
+    top: 19px;
+    transform: rotate(0deg);
+    transition: 300ms;
+}
+
+.form-floating.fn-form-select.active::after {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.form-floating>.form-select~label {
+    transform: scale(.875) translateY(-11px) translateX(2.4px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.form-floating>.form-select.empty {
+    padding: 19px 16px;
+    color: var(--1-txt-5-placeholder);
+    line-height: 24px;
+}
+.form-floating>.form-select.empty~label {
+    transform: scale(1) translateY(0px) translateX(0);
+    visibility: visible;
+    opacity: 0;
+    z-index: 10;
+}
+
+
+.form-floating>.form-select {
+    font: 500 var(--noto-xxs) var(--font-family-Noto); 
+    height: 62px;
+    padding: 30px 16px 8px 16px;
+    border-radius: 8px;
+    outline: none;
+    border: solid 1px var(--line-2-textfield);
+    background-color: var(--btn-2-white);
+    color: var(--1-txt-1-black);
+
+}
+
+.form-floating>.form-select option{
+    font: 500 var(--noto-xxs) var(--font-family-Noto); 
+}
+
+
+
+.form-select:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--line-1-active);
+    background-image: none;
+    border-color: transparent;
+}
+
+/*Styling Selectbox*/
+.fn-dropdown {
+    width: 300px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgb(204, 204, 204);
+    transition: all .5s ease;
+    position: relative;
+    font-size: 14px;
+    color: #474747;
+    height: 100%;
+    text-align: left
+  }
+  .fn-dropdown .select {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font: 500 var(--noto-xxs) var(--font-family-Noto) !important;
+    height: 62px;
+    padding: 19px 16px;
+    color: var(--1-txt-5-placeholder);border-radius: 8px;
+    outline: none;
+    border: solid 1px var(--line-2-textfield);
+    background-color: var(--btn-2-white);
+  }
+  .fn-dropdown .select > i {
+      font-size: 13px;
+      color: #888;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+      float: right;
+      line-height: 20px
+  }
+  .fn-dropdown:hover {
+      box-shadow: 0 0 4px rgb(204, 204, 204)
+  }
+  .fn-dropdown:active {
+      background-color: #f8f8f8
+  }
+  .fn-dropdown.active:hover,
+  .fn-dropdown.active {
+      box-shadow: 0 0 4px rgb(204, 204, 204);
+      border-radius: 2px 2px 0 0;
+      background-color: #f8f8f8
+  }
+  .fn-dropdown.active .select > i {
+      transform: rotate(-90deg)
+  }
+  .fn-dropdown .fn-dropdown-menu {
+      position: absolute;
+      background-color: #fff;
+      width: 100%;
+      left: 0;
+      margin-top: 1px;
+      box-shadow: 0 1px 2px rgb(204, 204, 204);
+      border-radius: 0 1px 2px 2px;
+      overflow: hidden;
+      display: none;
+      max-height: 144px;
+      overflow-y: auto;
+      z-index: 9
+  }
+  .fn-dropdown .fn-dropdown-menu li {
+      padding: 10px;
+      transition: all .2s ease-in-out;
+      cursor: pointer
+  } 
+  .fn-dropdown .fn-dropdown-menu {
+      padding: 0;
+      list-style: none
+  }
+  .fn-dropdown .fn-dropdown-menu li:hover {
+      background-color: #f2f2f2
+  }
+  .fn-dropdown .fn-dropdown-menu li:active {
+      background-color: #e2e2e2
+  }
+
+
+
+
+
+
+
+
+/*textarea*/
+.fn-form-textarea .form-control {
+    padding: 19px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--line-2-textfield);
+    color: var(--1-txt-1-black);
+    background-color: var(--btn-2-white);
+    min-height: 86px;
+    resize: none;
+    overflow: hidden;
+}
+
+.fn-form-textarea:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(100% - 19px);
+    height: 32px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+.fn-form-textarea.form-control:focus,
+.fn-form-textarea.form-control:not(:placeholder-shown) {
+    padding-top: 40px
+}
+
+
+
+.fn-valid-feedback {
+    display: none;
+    width: 100%;
+    color: var(--syst-1-error);
+    font: 500 normal var(--noto-xxxs) var(--font-family-Noto);
+}
+
+.fn-form-text .fn-valid-feedback,
+.fn-form-password .fn-valid-feedback,
+.fn-form-select .fn-valid-feedback,
+.fn-form-textarea .fn-valid-feedback,
+.fn-form-datepicker .fn-valid-feedback {
+    padding: 4px 16px 0 16px;
+}
+
+.fn-form-check .fn-valid-feedback {
+    padding: 4px 0 0 16px;
+}
+
+.errorempty .fn-valid-feedback,
+.errorempty+.fn-valid-feedback,
+.errorvalid .fn-valid-feedback,
+.errorvalid+.fn-valid-feedback {
+    display: block;
+}
+
+.errorempty input[type="text"],
+.errorempty input[type="password"],
+.errorempty select,
+.errorempty textarea,
+.errorvalid input[type="text"],
+.errorvalid select,
+.errorvalid input[type="password"],
+.errorvalid textarea {
+    box-shadow: inset 0 0 0 2px var(--line-3-error);
+    background-color: var(--btn-2-white);
+    border-color: transparent !important;
+}
+
+.fn-rdo-box input[type="radio"]:checked+label.errorempty+.fn-valid-feedback {
+    display: none;
+}
+
+.fn-form-group {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.fn-last-row>.fn-form-group,
+.fn-before-last-row>.fn-form-group {
+    margin-bottom: 0;
+}
+
+
+/*Input Date*/
+.fn-form-datepicker .form-control{
+    padding: 19px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--line-2-textfield);
+    color: var(--1-txt-1-black);
+    background-color: var(--btn-2-white);
+    height: 62px;
+}
+
+.fn-valid-email {
+    display: none;
+    padding: 4px 16px 0px;
+    font: 500 var(--noto-xxxs) var(--font-family-Noto);
+    color: var(--syst-1-error);
+}
+
+.fn-form-text > .errorempty ~ .fn-valid-email,
+.fn-form-text > .errorvalid ~ .fn-valid-email {
+    display: block
+}
+
+.fn-form-text.errorempty .fn-valid-feedback > span,
+.fn-form-text.errorempty + .fn-valid-feedback > span,
+.fn-form-text > .errorempty ~ .fn-valid-email > span {
+    display: none;
+}
+
+/*Dropdown Sorting*/
+.form-floating .form-select.sorting {
+    font: 500 var(--noto-xxs) var(--font-family-Noto);
+    height: 48px;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    border: solid 1px var(--line-2-textfield);
+    background-color: var(--btn-2-white);
+    color: var(--1-txt-1-black);
+    font-size: 16px;
+    width: 154px;
+    transition: inherit;
+    text-align: left;
+    z-index:10;
+}
+.form-select.sorting::after{
+    content:none;
+}
+
+.form-select.sorting {
+    background-size: 16px 16px;
+    background-position: right 12px center;
+    position: initial;
+}
+.form-select.sorting:focus{
+    outline: none;
+    border-color: transparent;
+}
+.sorting.nice-select:after {
+    content: none;
+}
+.fn-form-select .list {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    width: 154px;
+    border-radius: 8px;
+    border: solid 1px #bfc7cf;
+    box-shadow: none;
+    /*transition: inherit;*/
+    transition: all .3s;        
+    z-index: 9999;
+    min-width: 154px;
+    padding: 0;
+}
+.nice-select.sorting .option.selected {
+    font-weight: 500;
+}
+.sorting-list .option {
+    font: 500 var(--noto-xxs) var(--font-family-Noto);
+    color: var(--1-txt-1-black);
+    font-size: 16px;
+    height: 48px;
+    padding: 12px 12px 13px 12px;
+    width: 100%;
+    transition: none;
+}
+.sorting-list .option:hover {
+    cursor: default;
+}
+.sorting-list .option:hover, .sorting-list .option.focus, .sorting-list .option.selected.focus {
+    background-color: #edf6f2;
+}
+.sorting-list .option.selected {
+    background-image: url("../images/icon-24-green-right-active.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+.sorting-list .option:first-child:hover{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #edf6f2;
+}
+.sorting-list .option:last-child:hover{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #edf6f2;
+}
+.form-floating .form-select.sorting.sorting-small {
+    height: 36px;
+    padding: 6px 12px;
+}
+.btn-sorting {
+    font: 500 var(--noto-xxs) var(--font-family-Noto);
+    height: 48px;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    border: solid 1px var(--line-2-textfield);
+    background-color: var(--btn-2-white);
+    color: var(--1-txt-1-black);
+    font-size: 16px;
+    width: 154px;
+    text-align: left;
+    background-image: url(../images/icon-24-grey-down.svg);
+    background-size: 16px 16px;
+    background-position: right 12px center;
+    background-repeat:no-repeat;
+}
+.btn-sorting:focus{
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--line-1-active);
+    background-image: url(../images/icon-24-grey-up.svg);
+    border-color: transparent;
+}
+.sorting .modal-backdrop {
+    z-index: 2;
+}
+.sorting-list .list-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-family-Noto);
+    color: #1d1d1d;
+    padding: 8px 8px 8px 20px;
+    box-shadow: 0 1px 0 0 #ebebeb;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.list.dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    z-index:-1;
+}
+.dropdown-menu.show{
+    display:block !important;
+    opacity:1;
+    z-index:9999;
+}
+@media(min-width:992px) {
+}
+@media(max-width:991px){
+    .sorting-list .list-title {
+        display: flex;
+    }
+    .sorting-list .list {
+        min-width: 100% !important;
+        position: fixed !important;
+        top: auto !important;
+        bottom: -999px !important;
+        margin: 0 !important;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        left:0;
+
+    }
+    .sorting-list .option {
+        padding: 20px;
+        height: 64px;
+        font-size: 16px;
+        background-position: right 20px center !important;
+        background-size: 24px;
+    }
+    .sorting-list .option:hover, .sorting-list .option.focus, .sorting-list .option.selected.focus {
+        background-color: var(--bg-9-white);
+    }
+    .sorting-list .list.dropdown-menu.show {
+        bottom: 0px !important;
+        transform: none !important;
+    }
+    .dropdown-menu.animate__fadeOutDown{
+        transition:all .9s;
+    }
+}

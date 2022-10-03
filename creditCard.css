@@ -1,0 +1,257 @@
+﻿.fn-loggedIn-logo {
+    background-image: linear-gradient(to right, var(--tone-6-yellow-7), var(--tone-3-teal-7));
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    margin-right: 9px;
+}
+
+    .fn-loggedIn-logo > span {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--1-txt-7-teal);
+    }
+
+.fn-tooltip .fn-tooltip-btn.fn-icon24greeninfolarge {
+    background: url("../images/icon/icon-24-green-info-large.svg") no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    top: 19px;
+}
+
+.fn-tooltip.fn-tooltip-form > .fn-tooltip-block,
+.fn-tooltip.fn-tooltip-form > .fn-tooltip-block.show {
+    width: calc(200% + 8px) !important;
+    margin-left: calc(-100% - 9px);
+    transform: translateY(8px) !important;
+}
+
+.fn-total-price {
+    color: var(--tone-3-teal-2);
+}
+
+.fn-perMonth-price {
+    color: var(--1-txt-3-caption);
+}
+
+.fn-text-right {
+    text-align: right !important;
+}
+
+.fn-button-pay {
+    width: 100%;
+}
+
+.fn-pt16 {
+    padding-top: 16px;
+}
+
+.fn-ws-nowrap {
+    white-space: nowrap;
+}
+
+.fn-noHeaderFooter .modal-body {
+    padding: 20px;
+}
+
+.fn-noHeaderFooter .modal-content {
+    border-radius: var(--border-rad-popup);
+}
+
+.fn-noHeaderFooter .modal-body .fn-detail > label {
+    color: var(--tone-7-black-1);
+}
+
+.fn-noHeaderFooter .modal-body .fn-detail > .fn-IDList {
+    color: var(--1-txt-3-caption);
+}
+
+.fn-button-close {
+    width: 100%;
+    padding: 12px 16px 12px 16px;
+}
+
+.fn-button-tryAgain {
+    width: 100%;
+    padding: 12px 16px 12px 16px;
+}
+
+.fn-button-checkData {
+    width: 100%;
+    padding: 12px 16px 12px 16px;
+}
+
+.fn-button-callUs {
+    width: 100%;
+    max-width: 180px;
+}
+
+    .fn-button-callUs.fn-mw282 {
+        max-width: 282px;
+    }
+
+.fn-button-otherway {
+    color: var(--btn-1-mint) !important;
+    max-width: 282px;
+}
+
+.fn-title > label {
+    color: var(--1-txt-1-black);
+}
+
+.fn-caption > label {
+    color: var(--1-txt-3-caption);
+}
+
+.fn-detail > p {
+    color: var(--1-txt-2-grey);
+}
+
+.fn-status-pass {
+    padding: 12px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--line-1-active);
+}
+
+.fn-information-panel {
+    border-radius: var(--border-rad-normal);
+    background-color: var(--syst-5-noti-2);
+    position: relative;
+    padding: 36px 53.5px 16px 53.5px;   
+}
+
+    .fn-information-panel > .fn-center-image {
+        position: absolute;
+        margin-left: -28px;
+        left: 50%;
+        top: -28px;
+    }
+
+    .fn-information-panel .fn-email {
+        color: var(--tone-3-teal-2);
+    }
+
+.fn-button-insuDetail {
+    width: 100%;
+}
+
+.fn-backToHome {
+    color: var(--btn-1-mint);
+}
+
+.form-floating .form-select.sorting.dropdown-l {
+    padding: 19px 16px;
+    color: var(--1-txt-5-placeholder);
+    line-height: 24px;
+    height: 62px;
+    width: 100%;
+}
+
+.form-floating > .form-select.sorting.dropdown-l:focus,
+.form-floating > .form-select.sorting.dropdown-l:not(:placeholder-shown) {
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.form-floating > .form-select.sorting.dropdown-l.empty {
+    padding: 19px 16px;
+    padding-top: 19px;
+    padding-right: 16px;
+    padding-bottom: 19px;
+    padding-left: 16px;
+    color: var(--1-txt-5-placeholder);
+    line-height: 24px;
+}
+
+.sorting-list .option {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sorting-list .option.selected {
+    background-size: 24px;
+    background-position: right 20px center;
+}
+
+.fn-bank-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.errorvalid .fn-wrongFormat {
+    display: inline-block;
+}
+
+.errorempty.errorvalid .fn-wrongFormat,
+.fn-wrongFormat {
+    display: none;
+}
+
+.fn-pb44 {
+    padding-bottom: 44px;
+}
+
+.modal-content {
+    border: 0;
+}
+
+@media (max-width: 575px) {
+    .fn-noHeaderFooter.modal-dialog {
+        margin: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .fn-gx16-xs {
+        --bs-gutter-x: 2rem;
+    }
+
+    .fn-noHeaderFooter.modal-dialog {
+        max-width: 320px;
+    }
+
+    .fn-button-callUs {
+        max-width: 154px;
+    }
+
+        .fn-button-callUs.fn-mw282 {
+            max-width: 320px;
+        }
+
+    .fn-button-otherway {
+        max-width: 320px;
+    }
+
+    .fn-information-panel {
+        padding: 36px 23.5px 16px 23.5px;
+    }
+
+    .fn-bank-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    .fn-noHeaderFooter.modal-dialog {
+        max-width: 384px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1020px) {
+    .fn-ws-nowrap {
+        max-width: 14vw;
+        overflow-x: hidden;
+    }
+}

@@ -1,0 +1,78 @@
+/* spacing */
+
+.py-6 {
+    padding: 56px 0px;
+}
+
+
+/* size */
+
+.mw-sm-384 {
+    max-width: 384px;
+}
+
+.ctp-check img {
+    width: 96px;
+}
+
+
+/* position */
+
+.start-16 {
+    left: 16px;
+}
+
+.top-16 {
+    top: 16px
+}
+
+.end-16 {
+    right: 16px
+}
+
+.bottom-16 {
+    bottom: 16px;
+}
+
+
+/* more */
+
+.fn-checkbox.fn-checkbox-m.ctp-check label .check {
+    width: auto;
+    height: auto;
+}
+
+.table.ctp-table tr td {
+    border: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.table.ctp-table tbody tr:last-child {
+    display: none;
+}
+
+.table.ctp-table tbody tr.active:last-child {
+    display: table-row;
+}
+
+.table.ctp-table tbody tr:not(.active) td,
+.table.ctp-table tbody tr.active:last-child td {
+    border-bottom: dashed 1px var(--tone-2-mint-6);
+    padding-bottom: 16px;
+}
+
+.table.ctp-table tfoot tr td {
+    padding-top: 16px;
+}
+
+@media (max-width:575px) {
+    /* size */
+    .mw-sm-384 {
+        max-width: 320px;
+    }
+    /* spacing */
+    .py-6 {
+        padding: 24px 0px;
+    }
+}

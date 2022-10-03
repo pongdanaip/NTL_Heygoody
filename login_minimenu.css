@@ -1,0 +1,93 @@
+#bgnone{
+    position: relative;
+}
+
+.fn-user-box {
+    width: 320px;
+    height: 142px;
+    padding: 32px 0 0 24px;
+    border-radius: var(--border-rad-popup);
+    background-image: linear-gradient(90deg, var(--tone-6-yellow-7) 0%, var(--tone-3-teal-7) 100%);
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.fn-user-box > .fn-user-content {
+    position: absolute;
+    z-index: 1;
+}
+.fn-user-box .fn-user-content > .fn-user-text {
+    font: bold var(--noto-s) var(--font-family-Noto);
+    color: var(--1-txt-1-black);
+}
+.fn-user-box .fn-user-content > .fn-user-btn{
+    margin-top: 12px;
+}
+
+.fn-user-box > .fn-element-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.fn-user-box .fn-element-logo > img {
+    width: 320px;
+    border-top-right-radius: var(--border-rad-popup);
+}
+
+.fn-close-modal{
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #bgnone{
+        position: unset;
+    }
+    .modal-backdrop{
+        z-index: 0;
+        width: 100vh;
+        height: 100vh;
+    }
+    .fn-fade-bg {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    .fn-user-box{
+        z-index: 1;
+        background-image: linear-gradient(to right, var(--tone-6-yellow-7) , var(--tone-3-teal-7));
+        position: absolute;
+        width: 100%;
+        height: 144px;
+        top: unset;
+        bottom: 0;
+        border-top-left-radius: var(--border-rad-popup);
+        border-top-right-radius: var(--border-rad-popup);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-bottom: var(--p-56);
+    }
+    .fn-user-box .fn-element-logo > img {
+        width: 100%;
+        overflow: hidden;
+
+    }
+    
+    /*
+    .fn-user-box > .fn-close-modal {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+    
+    .fn-user-box .fn-close-modal > .fn-btn-close {
+        border: 0;
+        background: url("../images/icon-48-grey-close-popup.svg");
+        opacity: 1;
+        width: 36px;
+        height: 36px;
+    }
+    */
+}

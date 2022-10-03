@@ -1,0 +1,531 @@
+﻿/*social sticky*/
+.detail-side-social {
+    position: absolute;
+    right: 160px;
+    text-align: center;
+    margin-top: 9px;
+    top: 170px;
+}
+.detail-side-social.fixed-top {
+    position: sticky;
+    max-width: 40px;
+    left: auto;
+    top: 70px;
+    margin-left: auto;
+    margin-right:140px;
+    z-index: -1;
+}
+
+.fn-section-mint-bg {
+    background-color: var(--bg-5-mint);
+    position: relative;
+}
+
+.fn-section-violet-bg {
+    background-color: #f6f7fb;
+}
+
+.fn-section-red-bg {
+    background-color: #fff8f9;
+}
+
+.fn-section-orange-bg {
+    background-color: #fefaf4;
+}
+
+.fn-section-grey-bg {
+    background-color: var(--bg-3-beige-60);
+}
+
+.fn-circle-mint {
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+}
+
+.fn-z-index-1 {
+    z-index: 1;
+}
+
+.fn-pill-tab-custom.nav-pills .nav-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.fn-pill-tab-custom.nav-pills .nav-link {
+    padding: 6px 12px;
+    border-radius: 24px;
+    color: var(--1-txt-1-black);
+}
+
+.fn-pill-tab-custom.nav-pills #pills-category-tab.active {
+    background-color: var(--tone-2-mint-7);
+}
+
+.fn-pill-tab-custom.nav-pills #pills-tips-tab.active {
+    background-color: var(--tone-4-violet-7);
+}
+
+.fn-pill-tab-custom.nav-pills #pills-lifestyles-tab.active {
+    background-color: var(--tone-5-red-7);
+}
+
+.fn-pill-tab-custom.nav-pills #pills-equipments-tab.active {
+    background-color: var(--tone-1-orange-7);
+}
+
+
+.fn-title-article-section {
+    color: var(--1-txt-7-teal);
+}
+
+.fn-article-card {
+    border-radius: var(--border-rad-popup);
+    background-color: var(--1-txt-4-white);
+}
+
+.card {
+    border: 0;
+}
+
+.card-footer {
+    background-color: var(--1-txt-4-white);
+    border-top: 0;
+}
+
+.fn-card-highlight .card-body {
+    padding: 40px 24px 24px 0;
+}
+
+.fn-card-highlight .card-footer {
+    position: absolute;
+    padding: 8px 16px 24px 0;
+    bottom: 0px;
+}
+
+.fn-image-article,
+.fn-card-highlight {
+    border-top-left-radius: var(--border-rad-popup);
+    border-bottom-left-radius: var(--border-rad-popup);
+}
+
+.fn-image-article_detail {
+    border-radius: var(--border-rad-popup);
+}
+
+.fn-text-paragraph {
+    color: var(--1-txt-1-black);
+}
+
+.fn-tag-section > .fn-text-tag {
+    color: var(--1-txt-1-black);
+}
+
+.fn-tag-section > button {
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    height: auto;
+    margin-right: 8px;
+}
+
+    .fn-tag-section > button:last-child {
+        margin-right: 0;
+    }
+
+.fn-buy-car-insurance-section {
+    padding: 32px 40px;
+    border-radius: var(--border-rad-popup);
+    background: url(../images/all_article/banner-footer-quote-car-desktop.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*border: 1px solid transparent;*/
+}
+
+.fn-side-social {
+    position: absolute;
+    top: 16px;
+    right: -51px;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.fn-breadcrumb > .breadcrumb {
+    margin: 0;
+}
+
+.fn-breadcrumb > .breadcrumb > .breadcrumb-item > a {
+    color: var(--1-txt-2-grey);
+}
+
+.fn-breadcrumb > .breadcrumb > .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0;
+}
+
+    .fn-breadcrumb > .breadcrumb > .breadcrumb-item + .breadcrumb-item::before {
+        content: "";
+        background: url(../images/all_article/icon-24-grey-next.svg) no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+        padding-right: 0;
+        position: relative;
+        top: 1px;
+    }
+
+.fn-side-social > li:first-child > a {
+    color: var(--1-txt-3-caption);
+}
+
+.fn-side-social.sticky {
+    left: auto;
+    top: 70px;
+    right: -419px;
+    z-index: -1;
+}
+
+.fn-btn-check-price {
+    padding: 12px 24px;
+    border-radius: var(--border-rad-normal);
+    background-image: linear-gradient(to right, var(--tone-5-red-4), var(--tone-6-yellow-1));
+    border: 0;
+    color: var(--btn-2-white) !important;
+    display: inline-block;
+}
+
+.fn-pill-card-violet {
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: var(--tone-4-violet-1);
+    background-color: var(--tone-4-violet-8);
+}
+
+.fn-pill-card-red {
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: var(--tone-5-red-1);
+    background-color: var(--tone-5-red-8);
+}
+
+.fn-pill-card-orange {
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: var(--tone-1-orange-1);
+    background-color: var(--tone-1-orange-8);
+}
+
+.fn-article-sub-card {
+    border-radius: var(--border-rad-popup);
+    background-color: var(--1-txt-4-white);
+}
+
+    .fn-article-sub-card .card-footer {
+        border-bottom-left-radius: var(--border-rad-popup);
+        border-bottom-right-radius: var(--border-rad-popup);
+    }
+
+.card-img-top {
+    border-top-left-radius: var(--border-rad-popup);
+    border-top-right-radius: var(--border-rad-popup);
+}
+
+.fn-title-article {
+    color: var(--1-txt-1-black) !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+}
+
+.fn-title-article-highlight {
+    font-family: var(--font-family-Noto);
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.fn-color-visitor-text {
+    color: var(--1-txt-3-caption);
+}
+
+.fn-btn-secondary:hover {
+    color: var(--btn-1-mint);
+}
+
+.fn-mt24-mobile {
+    margin-top: 24px;
+}
+
+.fn-pills-white-panel {    
+    /*background-color: var(--btn-2-white);*/
+}
+
+.fn-titlecategory {
+    /*position: absolute;*/
+    width: 100%;
+    /*background-color: var(--btn-2-white);*/
+}
+
+    .fn-titlecategory.sticky {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: var(--btn-2-white);
+    }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.fn-titlecategory.sticky {
+    top: 66px;
+}
+
+.fn-article-paging .pagination {
+    align-items: center;
+}
+
+.fn-article-paging .pagination .page-link {
+    padding: 12px;
+    border-radius: var(--border-rad-normal);    
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1d1d1d;
+}
+
+    .fn-article-paging .pagination .page-item:not(:first-child):not(:last-child) .page-link {
+        border-color: var(--line-2-textfield);
+    }
+
+    .fn-article-paging .pagination .page-item:first-child .page-link {
+        margin-right: 16px;
+        border-color: var(--btn-1-mint);
+    }
+
+    .fn-article-paging .pagination .page-item:last-child .page-link {
+        border-color: var(--btn-1-mint);
+    }
+
+.fn-article-paging .pagination .fn-paging-text {
+    padding-left: 8px;
+    padding-right: 16px;
+}
+
+.fn-all-article-section > .fn-mt24-mobile:last-child {
+    padding-bottom: 0 !important;
+}
+
+.fn-all-article-section .fn-article-sub-card .card-body,
+.fn-article-detail-section .fn-article-sub-card .card-body {
+    padding-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .fn-titlecategory.sticky {
+        top: 62px;
+    }
+
+    .fn-container-mw-100 {
+        max-width: 100% !important;
+        padding-right: 0;
+    }
+
+    .fn-title-article-highlight {
+        font-family: var(--font-family-Noto);
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .fn-mobile-mt16 {
+        margin-top: 16px;
+    }
+
+    .fn-mb24-moblile {
+        margin-bottom: 24px;
+    }
+
+    .fn-mt24-mobile {
+        margin-top: 0 !important;
+    }
+
+    .fn-overflow-nav-pills {
+        overflow: auto;
+    }
+
+    .fn-pill-tab-custom.nav-pills {
+        flex-wrap: nowrap;
+    }
+
+        .fn-pill-tab-custom.nav-pills .nav-item {
+            white-space: nowrap;
+        }
+
+    .fn-image-article {
+        border-top-left-radius: var(--border-rad-popup);
+        border-top-right-radius: var(--border-rad-popup);
+        border-bottom-left-radius: 0;
+    }
+
+    .fn-card-highlight {
+        border-radius: var(--border-rad-popup);
+    }
+
+        .fn-card-highlight .card-body,
+        .fn-article-sub-card .card-body {
+            padding: 16px 16px 8px 16px;
+        }    
+
+        .fn-card-highlight .card-footer {
+            position: static;
+            padding: 0 16px 16px 16px;
+            border-bottom-left-radius: var(--border-rad-popup);
+            border-bottom-right-radius: var(--border-rad-popup);
+        }
+
+    .fn-article-sub-card .card-footer {
+        padding: 0 16px 16px 16px;
+    }
+
+    .fn-buy-car-insurance-section {
+        padding: 32px 20px 56px 20px;
+        background: url(../images/all_article/banner-footer-quote-car-mobile.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .fn-side-social {
+        position: relative;
+        top: auto !important;
+        right: auto !important;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        justify-content: end;
+    }
+
+        .fn-side-social > li:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        .fn-side-social > .mb4,
+        .fn-side-social > .mb8 {
+            margin-bottom: 0;
+        }
+
+    .fn-viewer {
+        flex-wrap: wrap;
+    }
+}
+
+/*@media (min-width: 992px) and (max-width: 1199px) {
+    .fn-side-social.sticky {
+        width: calc(100% - 71vw);
+        right: 0 !important;
+    }
+}*/
+
+@media (min-width: 992px) {
+    .fn-desktop-mb40 {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .fn-fluid-section {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+    }
+
+        .fn-fluid-section > .fn-px-mobile-fluid {
+            padding: 0;
+        }
+
+    .fn-buy-car-insurance-section {
+        border-radius: 0 !important;
+    }
+
+    .detail-side-social {
+        position: inherit;
+        right: auto;
+        text-align: center;
+        margin-top: auto;
+        top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .detail-side-social .mb-lg-1 , .detail-side-social .mb-lg-2{
+        margin-right: 8px;
+    }
+}
+
+@media (min-width:576px) {
+    
+    .detail-side-social {
+        position: inherit;
+        right: auto;
+        text-align: center;
+        margin-top: auto;
+        top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .detail-side-social .mb-lg-1 , .detail-side-social .mb-lg-2{
+        margin-right: 8px;
+    }
+}
+
+@media (min-width:992px) {
+    .detail-side-social {
+        position: absolute;
+        /*right: 121px;*/
+        right: 13vw;
+        text-align: center;
+        margin-top: 9px;
+        top: 170px;
+        display: block;
+    }
+    .detail-side-social.fixed-top {
+        position: sticky;
+        max-width: 40px;
+        left: auto;
+        top: 70px;
+        margin-left: auto;
+        margin-right:101px;
+        margin-bottom: -125px;
+    }
+    .detail-side-social .mb-lg-1 , .detail-side-social .mb-lg-2{
+        margin-right: 0px;
+    }
+}
+
+@media (min-width:1200px) {
+    .detail-side-social {
+        right: 153px;
+    }
+    .detail-side-social.fixed-top {
+        /*margin-right:140px;*/
+        margin-right: 133px;
+    }
+}

@@ -1,0 +1,656 @@
+.menu-user-login .top-icon-search {
+    padding:10px;
+}
+.menu-user-login .fn-user-icon {
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--1-txt-7-teal);
+    background-image: linear-gradient(to right, var(--tone-6-yellow-7), var(--tone-3-teal-7));
+    width: 26px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+}
+.member_page .user-icon {
+    font-family: var(--font-family-Noto);
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--1-txt-7-teal);
+    background-image: linear-gradient(to right, var(--tone-6-yellow-7), var(--tone-3-teal-7));
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    display: table-cell;
+    margin: auto;
+    text-align: center;
+}
+.member_page .fn-user-name {
+    font-family: var(--font-family-Noto);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--1-txt-1-black);
+}
+.member_page .fn-contact-box {
+    font-family: var(--font-family-NotoSans);
+    color: var(--1-txt-2-grey);
+    font-size: 14px;
+    line-height: normal;
+    margin-top:4px;
+}
+.member_page .fn-contact-box span{
+    word-break: break-all;
+}
+.member_page .fn-btn-edit {
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    color: var(--btn-1-mint);
+}
+.member_page .left-menu .fn-left-menu-group a, .member_page .left-menu .fn-left-menu-logout a{
+    border: 0px;
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    line-height: normal;
+    color: var(--1-txt-1-black);
+    background-color: transparent;
+    padding: 16px;
+}
+.member_page .left-menu .fn-left-menu-group a.active,.member_page .left-menu .fn-left-menu-logout a.active{
+    background-color: var(--tone-2-mint-8);
+    border-radius: 8px;
+}
+.member_page .left-menu .fn-left-menu-group a:hover,.member_page .left-menu .fn-left-menu-logout a:hover{
+    border-radius: 8px;
+    background-color: #edf6f2;
+}
+.member_page .left-menu .fn-left-menu-group {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--line-7-greylight);
+}
+.member_page .fn-policy-box span{
+    font-family: var(--font-family-NotoSans);
+    line-height: normal;
+    color: var(--1-txt-3-caption);
+    font-size: 12px;
+}
+.member_page .insurance-section .fn-insurance-head, .member_page .resetpass-section .fn-insurance-head, .member_page .tems-section .fn-insurance-head {
+    font-family: var(--font-family-Noto);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--1-txt-1-black);
+    line-height: normal;
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+.fn-insurance-head, .member_page .tems-section .fn-insurance-head {
+    padding-bottom: 18px;
+}
+.member_page .fn-insurance-box {
+    padding: 20px;
+    background-image: linear-gradient(72deg, #f9f2e4, #cce9dc);
+    border-radius: 8px;
+    position:relative;
+    margin-top:16px;
+}
+.member_page .fn-insurance-title {
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    color: var(--1-txt-1-black);
+    line-height: normal;
+    font-weight: bold;
+}
+.member_page .fn-insurance-detail {
+    padding-top: 8px;
+    display: block;
+    font-size: 12px;
+    font-family: var(--font-family-Noto);
+    color: var(--1-txt-2-grey);
+    line-height: normal;
+}
+.member_page .fn-insurance-btn-detail {
+    color: var(--btn-1-mint);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--font-family-Noto);
+    line-height: normal;
+    padding-top:16px;
+    display:block;
+}
+.member_page .fn-insurance-box::before {
+    content: url(../images/Member/illustrate-member-product-car.svg);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.member_page .fn-insurance-box.ctp::before {
+    content: url(../images/Member/illustrate-member-product-car-ctp.svg);
+}
+.member_page .fn-profile-head-text{
+    position:relative;
+}
+.member_page .fn-profile-head-text span {
+    font-family: var(--font-family-Noto);
+    color: var(--1-txt-1-black);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+}
+.member_page .fn-profile .fn-profile-goBlack {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    z-index:10;
+}
+.member_page .fn-profile .fn-profile-detail {
+    font-family: var(--font-family-Noto);
+    font-size: 14px;
+    color: var(--1-txt-2-grey);
+    line-height: normal;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+.member_page .fn-profile .fn-form-group {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    z-index:1;
+    position:relative;
+}
+.member_page .fn-profile .fn-button-save, .member_page .resetpass-section .fn-button-save {
+    min-width: 100%;
+}
+.fn-popup-logout .modal-dialog, .fn-popup-otp-tel .modal-dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    margin: 0;
+    width: 384px;
+}
+.fn-popup-logout .modal-content, .fn-popup-otp-tel .modal-content {
+    padding: 24px 20px 20px;
+    border-radius: 16px;
+}
+.fn-popup-logout .fn-pop-text-head, .fn-popup-otp-tel .fn-pop-text-head {
+    font-family: var(--font-family-Noto);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--1-txt-1-black);
+}
+.fn-popup-otp-tel .fn-pop-text-title {
+    color: var(--1-txt-1-black);
+    font-family: var(--font-family-Noto);
+    line-height: 1.63;
+    font-weight: normal;
+    font-size: 16px;
+    padding-top:8px;
+}
+.fn-popup-logout .modal-footer, .fn-popup-otp-tel .modal-footer {
+    padding-top: 24px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 0px;
+}
+.fn-popup-logout .modal-body, .fn-popup-otp-tel .modal-body {
+    padding: 0px;
+}
+.fn-popup-logout .modal-footer button {
+    padding: 0px;
+}
+.fn-popup-otp-tel .fn-pop-text-title .ref-otp {
+    font-weight: bold;
+    color: var(--tone-3-teal-2);
+}
+.member_page .fn-password-invisible {
+    display: block !important;
+    padding: 19px 16px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.member_page .errorempty input[type="password"] {
+    box-shadow: inset 0 0 0 2px var(--line-3-error);
+    background-color: var(--btn-2-white);
+    border-color: transparent !important;
+}
+.member_page .fn-password input {
+    border-radius: 8px;
+    padding: 19px 16px;
+    border: 1px solid var(--line-2-textfield);
+    color: var(--1-txt-1-black);
+    background-color: var(--btn-2-white);
+    height: 62px;
+}
+.member_page .fn-valid, .member_page .fn-valid-check {
+    padding: 4px 16px 0px;
+    font: 500 var(--noto-xxxs) var(--font-family-Noto);
+    color: var(--syst-1-error);
+}
+.member_page .fn-password-invisible:hover{
+    cursor:pointer;
+}
+.member_page .errorempty input[type="password"]:focus {
+    box-shadow: inset 0 0 0 2px var(--line-1-active);
+}
+.member_page .resetpass-section .fn-password.fn-form-group {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.member_page .resetpass-section .fn-text-detail {
+    color: var(--1-txt-3-caption);
+    line-height: normal;
+    font-family: var(--font-family-Noto);
+    font-size: 14px;
+    padding: 4px 16px 0px;
+    font-weight: 500;
+}
+.member_page .resetpass-section .alert_succeed {
+    padding: 16px;
+    background-color: var(--line-1-active);
+    border-radius: 8px;
+}
+.member_page .resetpass-section .alert_succeed span{
+    color: var(--1-txt-4-white);
+    line-height: normal;
+    font-size: 16px;
+    font-family: var(--font-family-Noto);
+    padding-left:8px;
+}
+.member_page .alert_succeed_box {
+    position: absolute;
+    top: -8px;
+    display: none;
+    animation-duration: .5s;
+}
+.member_page .insurance-section .fn_noPro_duct_box {
+    margin-top: 48px;
+    text-align: center;
+}
+.member_page .insurance-section .fn_noPro_duct_box label{
+    display:block;
+    padding-top:24px;
+    font-family: var(--font-family-Noto);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--1-txt-1-black);
+    line-height: normal;
+}
+.member_page .insurance-section .fn_noPro_duct_box span{
+    padding-top:8px;
+    display:block;
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--1-txt-2-grey);
+    line-height: normal;
+}
+.member_page .tems-section .tems-list-box {
+    padding: 16px 16px;
+    border-radius: 8px;
+    border: solid 1px var(--line-4-grey);
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    margin: 6px 0px;
+    width:100%;
+}
+.member_page .tems-section .tems-list-box:hover{
+    cursor:pointer;
+}
+.member_page .tems-section .tems-list-box span{
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--1-txt-1-black);
+    line-height: normal;
+}
+.member_page .tems-section .fn-tems-head{
+    position:relative;
+}
+.member_page .tems-section .fn-tems-goBlack {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.member_page .tems-section .terms-page{
+    max-width:690px;
+}
+.member_page .tems-section .fn-PDPAsetting label {
+    display:block;
+    font-family: var(--font-family-Noto);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: var(--1-txt-1-black);
+    padding-top:24px;   
+}
+.member_page .tems-section .fn-PDPAsetting span {
+    display:block;
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    color: var(--1-txt-1-black);
+    padding-top:8px;
+}
+.member_page .insurance-section .fn-insurance-goBlack {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.member_page .insurance-section .fn-insurance-head-box{
+    position:relative;
+}
+.member_page .tems-section .fn-PDPAsetting a:hover {
+    color: var(--btn-2-white);
+}
+.member_page .insurance-section .fn-insurance-detail-head .fn-insurance-detail-title span,.member_page .insurance-section .fn-insurance-detail-head .fn-insurance-detail-title label {
+    line-height: normal;
+}
+.member_page .insurance-section .fn-insurance-detail-head-text {
+    font-family: var(--font-family-Noto);
+    font-size: 18px;
+    color: var(--1-txt-1-black);
+    font-weight: bold;
+    line-height: normal;
+    width: auto;
+}
+.member_page .insurance-section .fn-insurance-detail-head-text .active {
+    color: var(--tone-3-teal-2);
+}
+.member_page .insurance-section .fn-insurance-detail-head-img {
+    width: auto;
+}
+.member_page .insurance-section .fn-insurance-detail-head-img img {
+    border: solid 1px var(--line-7-greylight);
+    border-radius: 8px;
+    max-width: 52px;
+}
+.member_page .insurance-section .fn-insurance-detail-title {
+    width: auto;
+}
+.member_page .insurance-section .fn-insurance-detail-title span {
+    font-family: var(--font-family-sarabun);
+    font-size: 16px;
+    line-height: 1.63;
+    color: var(--1-txt-1-black);
+    font-weight: normal;
+}
+.member_page .insurance-section .fn-insurance-detail-title label {
+    font-family: var(--font-family-sarabun);
+    font-size: 16px;
+    line-height: 1.63;
+    color: var(--1-txt-1-black);
+    font-weight: bold;
+}
+.member_page .insurance-section .fn-insurance-detail-head .fn-button {
+    padding: 6px 25px;
+}
+.member_page .insurance-section .fn-insurance-detail-main .fn-head {
+    font-family: var(--font-family-Noto);
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--1-txt-7-teal);
+    line-height: normal;
+    padding-bottom:8px;
+}
+.member_page .insurance-section .fn-insurance-detail-main .accordion-header .accordion-button:focus {
+    box-shadow: none;
+    border:0px;
+}
+.member_page .insurance-section .fn-insurance-detail-main .accordion-button:not(.collapsed) {
+    color: var(--1-txt-1-black);
+    background-color: transparent;
+    box-shadow:none;
+}
+.member_page .insurance-section .fn-insurance-detail-main .accordion-button::after {
+    background-image: url(../images/Member/icon-24-grey-down-small.svg);
+    width: 24px;
+    height: 24px;
+    background-size: inherit;
+    transition: all .2s;
+}
+.member_page .insurance-section .fn-insurance-detail-main .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
+.member_page .insurance-section .fn-insurance-detail-main .accordion-button {
+    padding: 16px 0px;
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    color: var(--1-txt-1-black);
+    line-height: normal;
+    font-weight: bold;
+    background-color: transparent;
+}
+.member_page .insurance-section .fn-insurance-detail-main .accordion-item {
+    background-color: transparent;
+    border-bottom: 1px solid var(--line-4-grey);
+}
+.member_page .insurance-section .fn-insurance-detail-main .accordion-body {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--bg-9-white);
+    margin-bottom:24px;
+}
+.member_page .insurance-section div.fn-insurance-detail-title span.fn-sub-detailTitle {
+    font-family: var(--font-family-sarabun);
+    line-height: 1.64;
+    color: var(--1-txt-3-caption);
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+}
+.text-right {
+    text-align: right;
+}
+.member_page .insurance-section .accordion-body .fn-insurance-detail-title span, .member_page .insurance-section .accordion-body .fn-insurance-detail-title label {
+    color: var(--1-txt-2-grey);
+}
+/*.member_page .insurance-section .fn-insurance-detail-title label{
+    max-width:200px;
+}*/
+/*.member_page .insurance-section .address .fn-insurance-detail-title span {
+    display: block;
+    max-width: 64px;
+}*/
+.member_page .insurance-section .fn-insurance-detail-main .fn-insurance-document-text {
+    color: var(--1-txt-1-black);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    font-family: var(--font-family-Noto);
+    display:flex;
+}
+.member_page .insurance-section .fn-insurance-detail-main .fn-insurance-document-icon {
+    position: absolute;
+    right: 0;
+    width: auto;
+}
+.member_page .insurance-section .fn-insurance-detail-main .fn-insurance-document-box {
+    padding:16px 0px;
+}
+.member_page .fn-insurance-detail-main a .fn-insurance-document-box {
+    border-bottom: 1px solid var(--line-4-grey);
+}
+.member_page .fn-insurance-detail-main .accordion-body .fn-card-number {
+    display: flex;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.member_page .fn-profile .alert_succeed {
+    padding: 16px;
+    background-color: var(--line-1-active);
+    border-radius: 8px;
+}
+.member_page .fn-profile .alert_succeed span{
+    color: var(--1-txt-4-white);
+    line-height: normal;
+    font-size: 16px;
+    font-family: var(--font-family-Noto);
+    padding-left: 8px;
+}
+.member_page .fn-profile .alert_succeed_profile_box {
+    position: absolute;
+    top: -40px;
+    display: none;
+    animation-duration: .25s;
+    z-index:0;
+}
+ul.fn-insurance-choice {
+    list-style: none;
+    padding-top:4px;
+    padding-left: 0px;
+    margin: 0;
+}
+ul.fn-insurance-choice li{
+    color: var(--1-txt-1-black);
+    line-height: normal;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: var(--font-family-Noto);
+}
+ul.fn-insurance-choice li::before {
+    content: "\2022";
+    color: var(--1-txt-2-grey);
+    display: inline-block;
+    width: 5px;
+    margin-right: 5px;
+}
+.member_page .fn-insurance-detail-head .fn-insurance-detail-head-footer {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px dashed var(--tone-2-mint-6);
+}
+.CTP .fn-modal-config .modal-body {
+    padding: 24px 20px 32px 20px !important;
+}
+.CTP .modal-body table thead th {
+    font-size: 16px;
+    font-family: var(--font-family-Noto);
+    font-weight: bold;
+    line-height: normal;
+    color: var(--1-txt-1-black);
+    padding: 16px;
+    background-color: #f9e7ca;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.CTP .modal-body table tbody tr {
+    border-bottom: 1px solid var(--line-7-greylight);
+}
+.CTP .modal-body table tbody tr:last-child{
+    border-bottom: 0px ;
+}
+.CTP .modal-body table tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 12px;
+}
+.CTP .modal-body table tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 12px;
+}
+.CTP .modal-body table tbody td {
+    background-color: #fefbf6;
+    font-family: var(--font-family-sarabun);
+    font-size: 14px;
+    line-height: 1.64;
+    color: var(--1-txt-1-black);
+    font-weight: normal;
+    padding: 12px;
+}
+.CTP .modal-body table tbody td.price{
+    padding: 8px 8px 12px 8px;
+    border-left: 1px solid var(--line-7-greylight);
+    width: 96px;
+    text-align: right;
+}
+@media(max-width:575px) {
+    .fn-popup-logout .modal-dialog, .fn-popup-otp-tel .modal-dialog {
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media(max-width:991px) {
+    .member_page .left-menu .fn-left-menu-group a.active, .member_page .left-menu .fn-left-menu-logout a.active, .member_page .left-menu .fn-left-menu-group a:hover, .member_page .left-menu .fn-left-menu-logout a:hover {
+        background-color: transparent;
+        border-radius: 0px;
+    }
+    .member_page .left-menu .fn-left-menu-group a, .member_page .left-menu .fn-left-menu-logout a{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .member_page .left-menu .fn-left-menu-group a::after{
+        content:url(../images/Member/icon-24-grey-next.svg);
+        position: absolute;
+        right: 0;
+    }
+    .member_page .insurance-section .fn-insurance-head, .member_page .resetpass-section .fn-insurance-head, .member_page .tems-section .fn-insurance-head {
+        padding-top: 0px;
+    }
+    .member_page .fn-profile .fn-profile-detail {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .member_page .fn-profile .alert_succeed_profile_box {
+        top: -8px;
+    }
+    .line-space-md {
+        display: none;
+    }
+    .modal.CTP {
+        background-color: #fff;
+    }
+}
+@media(min-width:992px) {
+    .member_page .left-menu {
+        position: fixed;
+        width: 294px;
+    }
+    .member_page .insurance-section, .member_page .tems-section {
+        margin-left: 25%;
+        display: block;
+    }
+    /*.member_page .d-sticky-dT {
+        position: sticky;
+    }*/
+    .member_page .fn-top-main {
+        top: 98px;
+    }
+    .member_page .resetpass-section {
+        margin-left: 30%;
+    }
+    .member_page .tems-section.Consent {
+        margin-left: 34%;
+    }
+    .member_page .tems-section .fn-PDPAsetting a {
+        max-width: 282px;
+        margin: auto;
+    }
+    .CTP .fn-modal-config.modal-lg {
+        max-width: 588px;
+    }
+    .CTP .fn-modal-config .modal-body {
+        max-height: 680px !important;
+    }
+}
+@media(min-width:1200px) {
+    .member_page div.left-menu {
+        width: 306px;
+    }
+    .line-space-md{
+        display:none;
+    }
+    .line-space-md.lg{
+        display:block;
+    }
+}

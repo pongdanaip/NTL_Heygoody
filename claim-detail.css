@@ -1,0 +1,192 @@
+.claim_detail_page .fn-claim-head-box {
+    background-image: linear-gradient(79deg, var(--tone-1-orange-8) 13%, var(--tone-2-mint-7) 100%);
+    position: relative;
+    /*margin-top: -66px;*/
+}
+    .claim_detail_page .fn-claim-head-box::before {
+        content: "";
+        background-image: url(/Content/Images/Claim_Detail/background-banner-claim-details-01-desktop.svg);
+        width: 446px;
+        height: 240px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .claim_detail_page .fn-claim-head-box::after {
+        content: "";
+        background-image: url(/Content/Images/Claim_Detail/background-banner-claim-details-02-desktop.svg);
+        width: 446px;
+        height: 240px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+.claim_detail_page .fn-claim-head-box .fn-claim-head h2{
+    text-align: center;
+    padding-top:130px;
+    padding-bottom: 62px;
+    margin:0;
+    color: var(--1-txt-1-black);
+    line-height: 1.33;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: var(--font-family-Noto);
+    z-index: 1;
+    position: relative;
+}
+.claim_detail_page .fn-Cform-detail-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.claim_detail_page .fn-Cform-detail-head label{
+    font-family: var(--font-family-Noto);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--1-txt-7-teal);
+    line-height: normal;
+}
+.claim_detail_page .fn-Cform-detail-sub-head {
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    color: var(--1-txt-2-grey);
+    line-height: normal;
+    font-weight: normal;
+}
+.claim_detail_page .accordion-button {
+    padding: 16px 0px;
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    color: var(--1-txt-1-black);
+    line-height: normal;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0px;
+    box-shadow: none;
+}
+.claim_detail_page .accordion-header .accordion-button:focus {
+    box-shadow: none;
+    border: 0px;
+}
+.claim_detail_page .accordion-button::after {
+    background-image: url(/Content/Images/Member/icon-24-grey-down-small.svg);
+    width: 24px;
+    height: 24px;
+    background-size: inherit;
+    transition: all .2s;
+}
+.claim_detail_page .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
+.claim_detail_page .accordion-flush .accordion-item {
+    background-color: transparent;
+    border-bottom: 1px solid var(--line-4-grey);
+}
+.claim_detail_page .accordion-body {
+    padding: 0px;
+    margin-bottom: 24px;
+}
+.claim_detail_page .fn-Cform-detail-detail-title {
+    color: var(--1-txt-7-teal);
+    font-family: var(--font-family-sarabun);
+    line-height: 1.64;
+    font-size: 14px;
+    font-weight: bold;
+}
+.claim_detail_page .fn-Cform-detail-detail-text {
+    color: var(--1-txt-1-black);
+    font-family: var(--font-family-sarabun);
+    line-height: 1.64;
+    font-size: 14px;
+    font-weight: normal;
+}
+.claim_detail_page .fn-Cform-contact-box .fn-Cform-contact-detail {
+    font-family: var(--font-family-sarabun);
+    color: var(--1-txt-1-black);
+    line-height: 1.64;
+    font-weight: normal;
+    font-size: 14px;
+}
+.claim_detail_page .fn-Cform-contact-box .fn-Cform-contact-detail label{
+    font-weight: bold;
+    display:block;
+}
+.claim_detail_page .fn-Cform-contact-box .fn-Cform-contact-tel a {
+    text-decoration: underline;
+}
+.claim_detail_page .fn-Cform-contact-box .fn-Cform-contact-tel a:hover{
+    color: var(--1-txt-1-black);
+}
+.claim_detail_page .fn-note-box {
+    padding: 16px 0px;
+    text-align: center;
+    background-image: linear-gradient(45deg, #F9F2E4 0%, #CCE9DC 100%);
+    border-radius: 8px;
+    margin-top:40px;
+}
+    .claim_detail_page .fn-note-box a:hover {
+        color: var(--1-txt-1-black);
+    }
+    .claim_detail_page .fn-note-box span {
+        font-family: var(--font-family-Noto);
+        font-size: 16px;
+        font-weight: normal;
+        color: var(--1-txt-1-black);
+        line-height: normal;
+    }
+
+@media(max-width:991px) {
+    .claim_detail_page .fn-claim-head-box::after {
+        content: none;
+    }
+    .claim_detail_page .fn-claim-head-box::before {
+        background-image: url(/Content/Images/Claim_Detail/background-banner-claim-details-01-mobile.svg);
+        width: 140px;
+        height: 120px;
+    }
+    .claim_detail_page .fn-claim-head-box {
+        margin: 0;
+    }
+        .claim_detail_page .fn-claim-head-box .fn-claim-head h2 {
+            padding-top: 42px;
+            padding-bottom: 42px;
+            font-size: 26px;
+            line-height: 1.38;
+        }
+    .claim_detail_page .fn-Cform-detail-head{
+        display:block;
+    }
+    .claim_detail_page .accordion-body .fn-Cform-contact-box {
+        display: flex;
+        align-items: center;
+        margin-top:12px;
+    }
+    .claim_detail_page .accordion-body .fn-Cform-contact-box .fn-Cform-contact-img{
+        margin-right:12px;
+    }
+    .claim_detail_page .accordion-body .fn-Cform-contact-box .fn-Cform-contact-img img{
+        padding:0px;
+    }
+    .claim_detail_page .fn-Cform-contact-box .fn-Cform-contact-tel.fn-long-text {
+        max-width: 200px;
+        display: block;
+    }
+    .claim_detail_page .fn-img-float {
+        top: -10px;
+        position: relative;
+    }
+    .claim_detail_page .fn-note-box {
+        margin-top: 24px;
+    }
+}
+
+@media(min-width:992px) {
+    .claim_detail_page .accordion-body .fn-Cform-contact-box{
+        margin:12px 0px;
+    }
+    br.line-space {
+        display:none;
+    }
+}

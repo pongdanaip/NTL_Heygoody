@@ -1,0 +1,198 @@
+/* Progress Bar */
+.progress {
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    background-color: transparent;
+}
+
+.progress.carinfo > .progress-bar{
+    background-color: var(--line-1-active);
+    width: 14%;
+} 
+
+.form-title-24 {
+    font:bold var(--noto-l) var(--font-family-NotoSansThai);
+    color: var(--1-txt-1-black);
+}
+
+/* DIABLE SEC */
+#form-carinfo-model,
+#form-carinfo-year,
+#form-carinfo-details,
+#form-carinfo-custom,
+#form-carinfo-use,
+#form-carinfo-insurance,
+#form-carinfo-expiryyear {
+    display: none;
+}
+
+/* Car Info */
+
+.fn-brand {
+    width: 20%;
+    padding: 5px 6px;
+}
+
+.fn-brand-g {
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.fn-carinfo-brand .col-12 > .form-floating.fn-form-select {
+    margin-top: 7px;
+
+}
+
+.fn-carinfo-brand .row > .fn-rdo-text label {
+    font: normal var(--en-noto-xxxs) var(--font-family-Noto);
+    color: var(--1-txt-2-grey);
+    justify-items: center;
+    text-align: center;
+    padding: 12px 16px 12px 16px;
+    display: grid;
+}
+
+.fn-brand label > .fn-text-brand {
+    width: 84px;
+    height: 38px;
+    padding: inherit;
+}
+
+.fn-brand label > .fn-text-benz {
+    width: 84px;
+    height: 38px;
+}
+
+.fn-brand label > img {
+    width: 76px;
+    height: 76px;
+}
+
+.fn-carinfo-detail > .fn-rdo-box.fn-rdo-m,
+.fn-carinfo-custom > .fn-rdo-box.fn-rdo-l,
+.fn-carinfo-use > .fn-rdo-box.fn-rdo-l,
+.fn-carinfo-insurance > .fn-rdo-box.fn-rdo-l,
+.fn-carinfo-expiryyear > .fn-rdo-box.fn-rdo-l {
+    width: 100%;
+}
+
+.fn-carinfo-detail .fn-rdo-box.fn-rdo-m > label,
+.fn-carinfo-custom .fn-rdo-box.fn-rdo-l > label,
+.fn-carinfo-use .fn-rdo-box.fn-rdo-l > label,
+.fn-carinfo-expiryyear .fn-rdo-box.fn-rdo-l > label {
+    margin-top: 12px;
+    height: fit-content;
+}
+
+.fn-carinfo-expiryyear .fn-rdo-box.fn-rdo-l > label:last-child {
+    margin-bottom: 0;
+}
+
+#form-carinfo-expiryyear > .row {
+    justify-content: center;
+}
+
+#form-carinfo-expiryyear .row .col-12.col-lg-6.mt56 > .fn-button {
+    justify-items: center;
+    width: 100%;
+}
+
+.data-car {
+    box-shadow: 0 -1px 0 0 var(--line-7-greylight);
+    height: fit-content;
+    padding: 16px 0px;
+}
+
+.text-head {
+    display: inline-block;
+    font: bold var(--noto-xxs) var(--font-family-Noto);
+    color: var(--1-txt-2-grey);
+    margin-right: 16px;
+}
+
+.text-carmodel {
+    display: inline-block;
+    font: normal var(--noto-xxxs) var(--font-family-Noto);
+    color: var(--1-txt-2-grey);
+    margin-right: 16px;
+}
+
+.edit-carinfo {
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.edit-carinfo > a {
+    font: bold var(--noto-xxs) var(--font-family-Noto);
+    color: var(--btn-1-mint);
+}
+
+
+.body-carinfo > .row {
+    justify-content: center;
+    text-align: center;
+}
+
+.body-carinfo .row .col-12 > .title2 {
+    font: bold var(--noto-s) var(--font-family-Noto);
+    margin: 8px 0px;
+}
+
+.body-carinfo .row > .col-sm-6.col-lg-2 {
+    text-align: -webkit-center;
+}
+
+.body-carinfo .row .col-sm-6.col-lg-2 > .fn-btn-M {
+    width: auto;
+    font:bold normal var(--noto-xxs) var(--font-family-Noto);
+}
+
+.form-title-24.pb24 {
+    padding-bottom: calc(var(--p-24) - 5px);
+}
+
+.fn-confirmbtn > .fn-btn-L {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .header {
+        height: 52px;
+    }
+    .pd56-24 {
+        padding-top: var(--p-24);
+    }
+    .fn-brand {
+        width: 33.33333333333333%;
+        padding: 5px 5px;
+    }
+    
+    .fn-brand-g > div:last-child {
+        display: none;
+    }
+
+    .text-carmodel {            
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;                                                                                                                         
+        text-overflow: ellipsis;
+        margin-top: 8px;
+    }
+
+    .data-carinfo {
+        position: relative;
+    }
+
+    .edit-carinfo {
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 0;
+    }
+
+    .fn-carinfo-brand .row > .fn-rdo-text label {
+        padding: 12px 12px 12px 12px;
+    }
+
+}

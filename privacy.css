@@ -1,0 +1,89 @@
+﻿.heygoody-policy-toggle{
+    padding-left: 0;
+    padding-right: 0;
+}
+.heygoody-policy-toggle,
+.heygoody-policy-toggle:focus {
+    color: var(--1-txt-1-black)!important;
+}
+.heygoody-policy-collapse {
+}
+.accordion-button:focus{
+    box-shadow:none;
+}
+
+
+.heygoody-policy-toggle .noto-xxs-bold {
+    position: relative;
+    /* margin-bottom: 16px; */
+}
+.heygoody-policy-toggle .noto-xxs-bold::after {
+    content: "";
+    background-image: url(../images/icon-16-grey-down.svg);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    transition: 300ms;
+}
+.heygoody-policy-toggle.policy-active .noto-xxs-bold::after {
+    transform: rotate(180deg);
+}
+
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/icon-16-grey-down.svg);
+    background-size: 16px;
+}
+.accordion-button:not(.collapsed){
+    box-shadow:none;
+}
+@media (max-width:991px) {
+    .heygoody-policy-toggle .noto-xxs-bold::after {
+        top:0px;
+    }
+    .list-group-item .noto-xxs-bold {
+        padding-right:24px;
+    }
+}
+
+.heygoody-policy-collapse > ul {
+    padding-left: 0;
+}
+.heygoody-policy-collapse > ul li{
+    position: relative;
+    padding-left: 10px
+}
+.heygoody-policy-collapse > ul li::marker {
+    content: ""
+}
+    .heygoody-policy-collapse > ul li:before {
+        content: "•";
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        top: -2px
+    }
+
+
+.heygoody-policy-collapse ul ul {
+    list-style-type: circle;
+}
+
+.heygoody-policy-collapse ul li {
+    margin-bottom: 16px;
+}
+.heygoody-policy-collapse > ul ul li{
+    padding-left: 12px;
+}
+.heygoody-policy-collapse > ul ul li:before {
+    content: "⚬";
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: -2px
+}

@@ -1,0 +1,196 @@
+﻿.fn-loggedIn-logo {
+    background-image: linear-gradient(to right, var(--tone-6-yellow-7), var(--tone-3-teal-7));
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    margin-right: 9px;
+}
+
+    .fn-loggedIn-logo > span {
+        color: var(--1-txt-7-teal);
+    }
+
+.fn-title > label {
+    color: var(--1-txt-1-black);
+}
+
+.fn-detail > p {
+    color: var(--1-txt-2-grey);
+}
+
+.fn-subtitle-grey > label {
+    color: var(--1-txt-2-grey);
+}
+
+.fn-button-confirm {
+    max-width: 384px;
+    width: 100%;
+}
+
+.fn-button-checkData {
+    width: 100%;
+}
+
+.fn-button-otherWay {
+    max-width: 180px;
+    width: 100%;
+}
+
+    .fn-button-otherWay:hover {
+        color: var(--1-txt-4-white);
+    }
+
+.fn-noHeaderFooter .modal-body {
+    padding: 20px;
+}
+
+.fn-noHeaderFooter .modal-content {
+    border-radius: var(--border-rad-popup);
+}
+
+.fn-noHeaderFooter .modal-body .fn-detail > label {
+    color: var(--tone-7-black-1);
+}
+
+.fn-panel-billing {
+    padding: 12px 16px 12px 16px;
+    border-radius: 12px;
+    background-color: #fbf6d7;
+}
+
+.fn-billing-title {
+    color: var(--1-txt-7-teal);
+}
+
+.fn-button-confirm {
+    width: 100%;
+}
+
+.fn-rdo-box.fn-rdo-m label {
+    height: auto;
+}
+
+.fn-rdo-box > .pb8 {
+    padding-bottom: 8px;
+}
+
+.fn-mint-panel {
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+    background-image: linear-gradient(82deg, #f9f2e4, #cce9dc);
+}
+
+.fn-fill-form {
+    color: var(--tone-3-teal-2);
+    border-bottom: 1px solid var(--line-2-textfield);
+}
+
+.fn-no-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .fn-no-list > li {
+        padding-bottom: 8px;
+    }
+
+        .fn-no-list > li:last-child {
+            padding-bottom: 0;
+        }
+
+.errorvalid .fn-wrongFormat {
+    display: inline-block;
+}
+
+.errorempty.errorvalid .fn-wrongFormat,
+.fn-wrongFormat {
+    display: none;
+}
+
+.fn-signed-name {
+    text-align: right;
+}
+
+.fn-button-notAccept {
+    width: 100%;
+}
+
+.fn-button-accept {
+    width: 100%;
+}
+
+.fn-otp-phone-num {
+    font-family: Noto Sans;
+    font-weight: bold;
+    color: var(--1-txt-6-mint);
+}
+
+.fn-otp-input-section > .fn-otp-input:last-child {
+    margin-right: 0;
+}
+
+.fn-otp-input {
+    width: 32px;
+    background-color: transparent;
+    border: none;
+    border-radius: 1px;
+    border-bottom: 2px solid var(--line-2-textfield);
+    outline: 0;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+    .fn-otp-input:focus {
+        border-color: var(--line-1-active);
+    }
+
+.fn-pb53 {
+    padding-bottom: 53px;
+}
+
+.fn-pt16 {
+    padding-top: 16px;
+}
+
+.fn-requestOTP {
+    color: var(--btn-1-mint);
+}
+
+    .fn-requestOTP:hover {
+        color: var(--btn-1-mint);
+    }
+
+.fn-expire-otp,
+.fn-invalid-otp {
+    color: var(--syst-1-error);
+}
+
+@media (max-width: 575px) {
+    .fn-noHeaderFooter.modal-dialog {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .fn-noHeaderFooter.modal-dialog {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 991px) {
+    .fn-button-confirm {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .fn-noHeaderFooter.modal-dialog {
+        max-width: 384px;
+    }
+}

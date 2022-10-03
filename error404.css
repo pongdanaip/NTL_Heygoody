@@ -1,0 +1,28 @@
+.fn-error404-mtop {
+    margin-top: 68px;
+}
+
+.fn-detail .fn-detail-text > span {
+    display: inline-block;
+}
+
+.fn-detail .fn-detail-text > .fn-detail-time {
+    font: bold var(--noto-xxs) var(--font-family-Noto);
+    color: var(--tone-3-teal-2);
+    display: inline-block;
+}
+
+.fn-detail .fn-detail-text .fn-detail-time > .fn-countdown {
+    display: inline-block;
+}
+
+@media (max-width:991px){
+    .fn-error404-mtop {
+        margin-top: 0;
+    }
+
+    .fn-detail .fn-detail-text > span {
+        display: block;
+    }
+    
+}

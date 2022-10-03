@@ -1,0 +1,670 @@
+.page-how-to{
+    margin-bottom:96px;
+}
+.page-how-to .fn-how-to-head-box .fn-claim-head {
+    padding-top: 120px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.page-how-to .fn-how-to-head-box .fn-claim-head h2{
+    color: var(--1-txt-1-black);
+    line-height: 1.33;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: var(--font-family-Noto);
+    margin:0;
+}
+.page-how-to .fn-my-choice-box {
+    border-radius: 16px;
+    background-color: var(--bg-9-white);
+    padding:24px 20px;
+}
+.page-how-to .fn-my-choice-head h2 {
+    color: #094f48;
+    line-height: normal;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: var(--font-family-Noto);
+    margin: 0;
+    text-align:center;
+}
+.page-how-to .fn-my-choice-card {
+    border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 32px 24px 24px;
+    width: 384px;
+    position: relative;
+}
+.page-how-to .fn-my-choice-card:last-child{
+    margin-bottom: 0px;
+}
+.page-how-to .fn-my-choice-card-head {
+    font-family: var(--font-family-Noto);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    color: var(--1-txt-1-black);
+}
+.page-how-to .fn-my-choice-card-title {
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: var(--1-txt-2-grey);
+    padding-top: 4px;
+}
+.page-how-to .fn-my-choice-card.installments {
+    background-color: var(--tone-1-orange-7);
+}
+.page-how-to .fn-my-choice-card.full-payment {
+    background-color: var(--tone-2-mint-7);
+}
+.page-how-to .fn-my-choice-card.installments::after{
+    content:""; 
+    background-image: url(../images/How_to_buy/illustrate-how-to-buy-instalment.svg);
+    width: 136px;
+    height: 116px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius:16px;
+}
+.page-how-to .fn-my-choice-card.full-payment::after {
+    content: "";
+    background-image: url(../images/How_to_buy/illustrate-how-to-buy-full-payment.svg);
+    width: 136px;
+    height: 116px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 16px;
+}
+.page-how-to .fn-my-choice-img {
+    display: inline-block;
+    padding-left:24px;
+}
+.page-how-to .fn-my-choice-card-section {
+    display: inline-block;
+}
+.page-how-to .fn-my-choice-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-how-to .fn-claim-head::after {
+    content: "";
+    width: 100%;
+    height: 461px;
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: var(--bg-5-mint);
+    z-index: -1;
+}
+.page-how-to .fn-my-tip-box {
+    padding-top:56px;
+    position:relative;
+}
+.page-how-to .fn-my-tip-body {
+    padding-bottom: 56px;
+    position: relative;
+}
+.page-how-to .fn-my-tip-body::after {
+    content: "";
+    background-image: url(../images/How_to_buy/element-article-green-desktop.svg);
+    width: 380px;
+    height: 190px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.page-how-to .fn-my-tip-card {
+    background-color: var(--bg-9-white);
+    border-radius: 16px;
+    padding:24px;
+}
+.page-how-to .fn-my-tip-card.active{
+    padding:70px 24px;
+    text-align: center;
+}
+.page-how-to .fn-my-tip-card .fn-my-tip-card-head{
+    padding-top:12px;
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    color: var(--1-txt-1-black);
+}
+.page-how-to .fn-my-tip-card.active .fn-my-tip-card-head{
+    font-size: 20px;
+}
+.page-how-to .fn-my-tip-card .fn-my-tip-card-title{
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: var(--1-txt-2-grey);
+    padding-top: 4px;
+}
+.page-how-to .fn-my-howto-payment-box {
+    background-color: var(--bg-5-mint);
+    padding-top: 56px;
+    padding-bottom: 56px;
+    position: relative;
+    z-index: 1;
+}
+.fn-my-howto-payment-body {
+    max-width: 224px;
+    margin: auto;
+}
+.fn-my-howto-payment-body .fn-my-howto-payment-step img{
+    border-radius:16px;
+    box-shadow: -1px 10px 35px -15px rgba(0,0,0,0.21);
+    -webkit-box-shadow: -1px 10px 35px -15px rgba(0,0,0,0.21);
+    -moz-box-shadow: -1px 10px 35px -15px rgba(0,0,0,0.21);
+}
+.fn-my-howto-payment-step .number-step {
+    font-family: var(--font-family-NotoSans);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--1-txt-4-white);
+    /*line-height: normal;*/
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    display: table-cell;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--ci-7-orange);
+}
+.fn-my-howto-payment-body .slick-prev::before, .fn-my-howto-payment-body .slick-next::before {
+    content: "";
+    display: inline-block;
+    background-size: 24px 24px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-color: var(--bg-9-white);
+    background-position: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fn-my-howto-payment-body .slick-prev::before {
+    background-image: url(../images/How_to_buy/icon-24-green-previous.svg);
+    background-size:20px 20px;
+    background-repeat:no-repeat;
+}
+.fn-my-howto-payment-body .slick-next::before {
+    background-image: url(../images/How_to_buy/icon-24-green-next.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+.fn-my-howto-payment-body .slick-prev, .fn-my-howto-payment-body .slick-next {
+    width:36px;
+    height:36px;
+}
+.fn-my-howto-payment-body .slick-prev{
+    left:-48px;
+}
+.fn-my-howto-payment-body .slick-next {
+    right: -48px;
+}
+.fn-my-howto-payment-body .slick-prev.slick-disabled:before {
+    background-image: url(../images/How_to_buy/icon-24-grey-previous-disable.svg);
+    opacity:1;
+}
+.fn-my-howto-payment-body .slick-next.slick-disabled:before {
+    background-image: url(../images/How_to_buy/icon-24-grey-next-disable.svg);
+    opacity: 1;
+}
+.fn-my-howto-payment-step-text {
+    padding-top:24px;
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: var(--1-txt-1-black);
+}
+.fn-my-howto-payment-body .slick-dots li {
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.fn-my-howto-payment-body  .slick-dots li button {
+    height: 10px;
+}
+.fn-my-howto-payment-body  .slick-dots li.slick-active {
+    width: 24px;
+}
+.fn-my-howto-payment-body .slick-dots li button:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    opacity: 1;
+    font-size: 10px;
+     background-color: var(--line-4-grey);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.fn-my-howto-payment-body .slick-dots li.slick-active button:before {
+    width: 24px;
+    background-color: var(--line-1-active);
+}
+.fn-my-howto-payment-body .slick-dots {
+    margin-top: 10px;
+    position: inherit;
+    bottom: 0;
+}
+.fn-my-howto-payment-body.slick-dotted.slick-slider{
+    margin-bottom:0px;
+}
+.fn-my-howto-payment-box::after {
+    content: "";
+    background-image: url(../images/How_to_buy/element-how-to-buy-green-desktop.svg);
+    width: 240px;
+    height: 480px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    z-index: -1;
+}
+.page-how-to .fn-my-howto-installment-box {
+    padding:56px 0px;
+}
+.fn-my-howto-installment-box-text {
+    padding-top: 16px;
+    /*padding-bottom: 16px;*/
+}
+.fn-my-howto-installment-box-text label {
+    font-family: var(--font-family-Noto);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--1-txt-1-black);
+    display: block;
+}
+.fn-my-howto-installment-box-text span {
+    padding-top:4px;
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--1-txt-1-black);
+    display: block;
+}
+.fn-my-howto-installment-box-img{
+    margin-right:24px;
+}
+.fn-my-howto-installment-box-img img {
+    max-width: 160px;
+}
+.fn-my-howto-installment-tooltip {
+    background-color: var(--bg-2-beige-100);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+.fn-my-howto-installment-tooltip span{
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    color: var(--1-txt-7-teal);
+}
+.fn-my-howto-installment-head h2{
+    font-family: var(--font-family-Noto);
+    font-size: 26px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: var(--1-txt-7-teal);
+    margin:0;
+}
+.fn-my-store-channel-head {
+    font-family: var(--font-family-Noto);
+    font-size: 26px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: var(--1-txt-7-teal);
+}
+.fn-my-store-channel-head .fn-highlight{
+    color: var(--1-txt-4-white);
+    padding: 0pc 12px;
+    border-radius: 20px;
+    margin-left: 12px;
+}
+.fn-my-store-channel-head .fn-highlight.orange{
+    background-image: linear-gradient(76deg, var(--tone-5-red-4), var(--tone-6-yellow-1) 100%);
+}
+.fn-my-store-channel-head .fn-highlight.green{
+    background-image: linear-gradient(81deg, var(--tone-2-mint-4), var(--tone-3-teal-3) 50%, var(--tone-3-teal-2));
+
+}
+.fn-my-store-channel-box {
+    border-radius: 16px;
+    background-color: var(--bg-2-beige-100);
+    padding:24px 24px 40px;
+}
+.fn-my-store-channel-box .fn-icon-text span{
+    font-family: var(--font-family-Noto);
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--1-txt-2-grey);
+}
+.fn-my-store-channel-body .col-auto{
+    padding-left:13px;
+    padding-right:13px;
+}
+.plg32-p0{
+    padding-left:32px;
+}
+.prg32-p0 {
+    padding-right: 32px;
+}
+.fn-my-store-channel-p {
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 24px;
+}
+.page-how-to .fn-line-channel {
+    border-bottom: 1px dashed var(--tone-2-mint-6);
+    width: 690px;
+    margin: auto;
+}
+.page-how-to .fn-time-payment-box label {
+    font-family: var(--font-family-Noto);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: var(--1-txt-7-teal);
+}
+.page-how-to .fn-time-payment-box {
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    color: var(--1-txt-1-black);
+}
+.page-how-to .fn-time-payment-box span{
+    font-family: var(--font-family-Noto);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: var(--1-txt-7-teal);
+    border-radius: 16px;
+    background-color: var(--tone-1-orange-7);
+    padding: 0px 16px;
+    display: block;
+    width: 112px;
+    margin: auto;
+}
+.page-how-to .fn-time-payment-box:first-child{
+    padding-right:12px;
+}
+.page-how-to .fn-time-payment-box:last-child {
+    border-left: 1px dashed var(--tone-2-mint-6);
+    padding-left:12px;
+}
+.page-how-to .fn-my-detail-box {
+    background-color: var(--bg-5-mint);
+    border-radius: 16px;
+    padding:24px 40px;
+    margin:40px 0px;
+}
+.page-how-to .fn-my-detail-box label{
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--1-txt-1-black);
+}
+.page-how-to .fn-my-detail-box span{
+    font-family: var(--font-family-sarabun);
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: var(--1-txt-2-grey);
+}
+.page-how-to .fn-about-card-check-price {
+    padding: 32px 40px;
+    background-image: url(../images/How_to_buy/banner-footer-quote-car-desktop.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.page-how-to .fn-about-card-check-price .btn {
+    border-radius: 8px;
+    background-image: linear-gradient(to right, var(--tone-5-red-4), var(--tone-6-yellow-1));
+    color: #fff;
+    right: 0;
+    padding: 12px 24px;
+    width: 131px;
+    height: 100%;
+}
+
+@media(max-width:575px) {
+    .container.full-moblie {
+        max-width: 100%;
+        padding: 0;
+    }
+    .fn-my-store-channel-box{
+        border-radius:0px;
+    }
+    .page-how-to {
+        margin-bottom: 0px;
+    }
+    .page-how-to .fn-about-card-check-price {
+        border-radius:0px;
+    }
+}
+
+@media(max-width:991px) {
+    .page-how-to{
+        position:relative;
+    }
+    .page-how-to .fn-how-to-head-box .fn-claim-head {
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+    .page-how-to .fn-how-to-head-box .fn-claim-head h2{
+        font-size: 26px;
+        line-height: 1.38;
+    }
+    .page-how-to .fn-my-choice-head h2,.fn-my-howto-installment-head h2 {
+        font-size: 24px;
+    }
+    .page-how-to .fn-my-choice-card{
+        padding:24px 20px;
+        width:100%;
+    }
+    .page-how-to .fn-my-choice-card.installments::after{
+        width: 134px;
+        height: 114px;
+    }
+    .page-how-to .fn-my-choice-card.full-payment::after{
+        width: 134px;
+        height: 114px;
+    }
+    .page-how-to .fn-my-choice-img{
+        display:none;
+    }
+    .page-how-to .fn-my-choice-card-section {
+        width:100%;
+    }
+    .fn-my-choice-card-title{
+        max-width:114px;
+    }
+    .page-how-to .fn-claim-head::after {
+        height: 351px;
+    }
+    .page-how-to .fn-my-tip-card {
+        padding: 24px 16px;
+    }
+    .page-how-to .fn-my-tip-card.active{
+        padding: 56px 24px 53px 24px;
+        margin-bottom:16px;
+    }
+    .page-how-to .fn-my-tip-box::after {
+        content:"";
+        background-image: url(../images/How_to_buy/element-article-green-mobile.svg);
+        width: 180px;
+        height: 180px;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .fn-my-howto-payment-box::after {
+        background-image: url(../images/How_to_buy/element-how-to-buy-green-mobile.svg);
+        width: 140px;
+        height: 280px;
+    }
+    .page-how-to .fn-my-tip-body::after{
+        content:none;
+    }
+    .fn-my-howto-installment-box-img img {
+        max-width: 120px;
+    }
+    .pt40mb {
+        padding-top: 40px;
+    }
+    .pt40mb.mt40{
+        margin:0;
+    }
+    .fn-my-store-channel-head{
+        font-size:24px;
+    }
+    .fn-my-store-channel-head .fn-highlight{
+        margin-left: 0px;
+        margin-top: 4px;
+        display: inline-block;
+    }
+    .plg32-p0{
+        padding-left:0px;
+    }
+    .prg32-p0 {
+        padding-right: 0px;
+    }
+    .page-how-to .fn-line-channel {
+        width: 100%;
+    }
+    .page-how-to .fn-my-detail-box{
+        padding:24px 20px;
+    }
+    .page-how-to .fn-about-card-check-price {
+        padding: 32px 20px;
+    }
+    .page-how-to .fn-about-card-check-price {
+        background-image: url(../images/How_to_buy/banner-footer-quote-car-mobile.jpg);
+    }
+}
+
+@media(min-width:992px) and (max-width:1399px) {
+    .page-how-to .fn-my-tip-card {
+        padding: 40px 24px;
+        height: 200px;
+    }
+    .page-how-to .fn-my-tip-card.active{
+        height:100%;
+        padding: 103.2px 24px;
+    }
+    .page-how-to .fn-line-channel {
+        width: 590px;
+    }
+    .fn-my-howto-installment-box .col-lg-6.col-12.plg32-p0 {
+        /*width: 100%;*/
+        width: 500px;
+        margin:auto;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .fn-my-howto-installment-box .col-lg-6.col-12.prg32-p0 {
+        /*width: 100%;*/
+        width: 500px;
+        margin: auto;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    /*.fn-my-howto-installment-box .col-lg-6.col-12.plg32-p0 .d-flex,.fn-my-howto-installment-box .col-lg-6.col-12.prg32-p0 .d-flex{
+        justify-content: center;
+    }*/
+    .fn-width-blill{
+        width:inherit;
+    }
+    .pt40mb {
+        margin-top: 40px;
+    }
+}
+
+@media(min-width:992px){
+    .fn-my-howto-payment-body .fn-my-howto-payment-step img {
+        max-width: 282px;
+    }
+    .fn-my-howto-payment-body {
+        max-width: inherit;
+        max-width: 700px;
+    }
+    .fn-my-howto-payment-step-box {
+        max-width: 282px;
+        display: inline-block;
+        margin-bottom:40px;
+    }
+    .fn-my-howto-payment-step-box:nth-child(2n+1){
+        margin-right:63px;
+    }
+    .fn-my-howto-payment-step-box:nth-child(2n+2){
+        margin-left:63px;
+    }
+    .page-how-to .fn-my-howto-payment-box {
+        padding-bottom: 16px;
+    }
+    .fn-width-blill {
+        width: 210px;
+    }
+    .fn-my-howto-payment-body .slick-arrow, .fn-my-howto-payment-body .slick-dots {
+        display: none !important;
+    }
+    .fn-my-howto-payment-body .slick-list {
+        height: inherit !important;
+    }
+    .fn-my-howto-payment-body .slick-track {
+        transform: inherit !important;
+        max-width: 700px !important;
+    }
+}

@@ -1,0 +1,504 @@
+﻿.fn-about-box {
+    background-color: var(--btn-2-white);
+    padding: 32px 20px 32px 20px;
+    margin: 0 -20px 0 -20px;
+}
+
+.fn-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.fn-about-card > img {
+    width: 71px;
+    margin: 0 6px 0 6px;
+}
+
+.fn-about-order > .fn-margin-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fn-about-order .fn-about-img > img {
+    width: 154px;
+}
+
+.fn-about-order > .fn-about-img {
+    text-align: center;
+}
+
+.fn-about-card {
+    margin: 0 -4px 0 -4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fn-card-spancing {
+    padding: 32px 20px 56px 20px;
+    margin: 0 -20px 0 -20px;
+    border-radius: 0;
+}
+
+.fn-title-whyheygoody {
+    font: bold var(--noto-xl) var(--font-family-Noto);
+    color: var(--1-txt-4-white);
+    position: relative;
+}
+
+.fn-whyheygoody-head {
+    font: bold var(--noto-xl) var(--font-family-Noto);
+    color: var(--1-txt-1-black);
+    text-align: center;
+}
+
+.about-banner-bg {
+    height: 120px;
+    background-color: #094f48;
+    position: relative;
+}
+
+.fn-about-text > h3 {
+    font: bold var(--noto-l) var(--font-family-Noto);
+    color: var(--tone-3-teal-2);
+}
+
+.fn-about-text > h4 {
+    font: bold var(--noto-l) var(--font-family-Noto);
+    color: var(--1-txt-1-black);
+    margin: 0;
+}
+
+.fn-about-text > p {
+    font: normal var(--noto-xs) var(--font-family-Noto);
+    color: var(--1-txt-1-black);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-banner-bg h1 {
+    top: 40px;
+}
+
+.about-banner-bg::before {
+    content: "";
+    background-image: url(../images/about/background-banner-about-us-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.page-about-us::before, .page-about-us::after {
+    content: "";
+    position: absolute;
+}
+
+.page-about-us::before {
+    background-image: url(../images/about/element-about-us-yellow.png);
+    background-image: 100%;
+    width: 230px;
+    height: 184px;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 511px;
+    z-index: -1;
+}
+
+.page-about-us::after {
+    background-image: url(../images/about/element-about-us-green.png);
+    background-image: 100%;
+    width: 200px;
+    height: 421px;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 504px;
+}
+
+.fn-about-content > .fn-about-description {
+    text-align: center;
+    margin-bottom: 40px;
+    word-spacing: -1px;
+}
+
+.about-order > .fn-about-text{
+    text-align: center;
+}
+
+.heygoody-title-about {
+    width: 196px;
+}
+
+.about-order:nth-child(even) .fn-about-text {
+    order: 1;
+}
+
+.about-order:not(last-child) {
+    margin-bottom: 32px !important;
+}
+
+.about-order:last-child {
+    margin-bottom: 56px !important;
+}
+
+.about-card {
+    border-radius: 16px;
+    padding: 32px 40px;
+    margin-bottom: 32px;
+}
+
+.about-card-check-price {
+    background-image: url(../images/banner-footer-quote-car-desktop.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-height: 199px;
+}
+
+.check-price-btn {
+    border-radius: 8px;
+    background-image: linear-gradient(to right, var(--tone-5-red-4), var(--tone-6-yellow-1));
+    color: #fff;
+    right: 0;
+    padding: 12px 24px;
+    width: 131px;
+    height: 100%;
+}
+
+.check-price-btn:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, var(--tone-5-red-9), var(--tone-6-yellow-9));
+}
+
+
+@media (max-width:575px) {
+    .about-banner-bg {
+        height: 120px;
+        background-color: #094f48;
+        position: relative;
+    }
+
+        .about-banner-bg::before {
+            content: "";
+            background-image: url(../images/about/background-banner-about-us-mobile.png);
+            background-size: 100%;
+        }
+
+    .page-about-us::after, .page-about-us::before {
+        display: none;
+    }
+
+    .about-banner-bg h1 {
+        font-size: 26px;
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .about-content.container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .heygoody-title-about {
+        width: 147px;
+    }
+
+    .about-content .description {
+        margin-bottom: 40px;
+        text-align: center;
+        word-spacing: -0.5px;
+    }
+
+    .about-order .fn-about-text {
+        order: 1;
+    }
+
+    .about-order .fn-about-img > img {
+        margin-bottom: 16px;
+    }
+
+    .about-teal {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .about-card {
+        border-radius: 0;
+        padding: 32px 20px;
+        margin-bottom: 0;
+    }
+
+    .fn-logo-insurant > img {
+        width: 71px;
+        padding: 0;
+        margin: 6px;
+    }
+    
+    .about-card-check-price {
+        background-image: url(../images/banner-footer-quote-car-mobile.jpg);
+        max-height: 250px;
+    }
+}
+
+@media (min-width:576px) {
+    .page-about-us::after, .page-about-us::before {
+        display: none;
+    }
+
+    .about-banner-bg h1 {
+        font-size: 26px;
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .about-content.container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .about-content .row:first-child .col-lg-8 {
+        padding: 32px 20px;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .heygoody-title-about {
+        width: 147px;
+    }
+
+    .about-content .description {
+        margin-bottom: 40px;
+        text-align: center;
+        word-spacing: -0.5px;
+    }
+
+    .about-order .fn-about-text {
+        order: 1;
+    }
+
+    .about-order .fn-about-img > img {
+        margin-bottom: 16px;
+    }
+
+    .about-teal {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .about-card-check-price {
+        background-image: url(../images/banner-footer-quote-car-mobile.jpg);
+        background-size: 100%;
+        background-position: center;
+        max-height: inherit;
+    }
+}
+
+@media (min-width:992px) {
+
+    .fn-about-card > img {
+        width: 82px;
+        margin: 0 4px 0 4px;
+    }
+
+    .fn-about-box {
+        background-color: var(--btn-2-white);
+        border-radius: var(--border-rad-popup);
+        padding: 32px 40px 32px 40px;
+        margin: 0 0 0 0;
+    }
+
+    .fn-about-text > p {
+        margin-bottom: 8px;
+    }
+
+    .fn-about-order > .fn-margin-auto{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .fn-about-order {
+        justify-content: space-between;
+    }
+
+    .about-order:not(last-child) {
+        margin-bottom: 8px !important;
+    }
+
+    .fn-card-spancing{
+        padding: 32px 40px 32px 40px;
+        margin: 32px 0 96px 0;
+        border-radius: var(--border-rad-popup);
+    }
+
+    .fn-about-order{
+        justify-content: space-between;
+    }
+    
+    .fn-about-order .fn-about-img > img {
+        width: 250px;
+    }
+
+    .fn-title-whyheygoody {
+        font: bold var(--noto-xxxl) var(--font-family-Noto);
+        color: var(--1-txt-4-white);
+        position: relative;
+    }
+    
+    .fn-whyheygoody-head {
+        font: bold var(--noto-xxxl) var(--font-family-Noto);
+        color: var(--1-txt-1-black);
+        text-align: left;
+    }
+
+    .fn-about-text > h3 {
+        font: bold var(--noto-l) var(--font-family-Noto);
+        color: var(--tone-3-teal-2);
+    }
+
+    .fn-about-content > .fn-about-description {
+        text-align: left;
+        margin-bottom: 40px;
+        word-spacing: -1px;
+    }
+    .about-order > .fn-about-text{
+        text-align: left;
+    }
+
+    .about-order:nth-child(even) .fn-about-text {
+        order: 1;
+        padding-left: 40px;
+    }
+
+    .about-order .fn-about-text {
+        order: 0;
+    }
+
+    .about-content .row:first-child .fn-about-text {
+        text-align: left;
+        padding: 32px 9px;
+    }
+
+    .about-content.container {
+        padding-right: var(--bs-gutter-x, 1.25rem);
+        padding-left: var(--bs-gutter-x, 1.25rem);
+    }
+
+    .about-content h2 {
+        text-align: left;
+        font-size: 26px;
+    }
+
+    .about-content .description {
+        margin-bottom: 40px;
+        text-align: left;
+        word-spacing: 0px;
+    }
+
+    .about-card-check-price {
+        background-image: url(../images/banner-footer-quote-car-desktop.jpg);
+        background-size: cover;
+        background-position: center;
+        max-height: 199px;
+    }
+
+    .page-about-us::before, .page-about-us::after {
+        display: block;
+        z-index: -1;
+    }
+
+    .about-banner-bg {
+        height: 240px;
+        background-color: #094f48;
+        position: relative;
+    }
+
+    .about-banner-bg h1 {
+        font-size: 36px;
+        top: 33px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .about-banner-bg h1 {
+        top: 40px;
+    }
+    .about-banner-bg::before {
+        content: "";
+        background-image: url(../images/about/background-banner-about-us-desktop.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-size: auto;
+    }
+
+    .about-content h2 {
+        text-align: left;
+        font-size: 36px;
+    }
+
+    .about-teal {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .about-order:last-child .fn-about-img > img {
+        margin-bottom: 0px;
+    }
+
+    .about-order .fn-about-img > img {
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width:1400px) {
+    
+    .about-banner-bg h1 {
+        top: 33px;
+        line-height: 1.33;
+    }
+    
+    .about-banner-bg::before {
+        content: "";
+        background-image: url(../images/about/background-banner-about-us-desktop.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        max-width: 1360px;
+    }
+
+    .about-content .description {
+        margin-bottom: 40px;
+        word-spacing: -1px;
+    }
+
+    .heygoody-title-about {
+        width: 196px;
+    }
+    
+    .about-card-check-price {
+        background-image: url(../images/banner-footer-quote-car-desktop.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        max-height: 199px;
+    }
+
+    .check-price-btn {
+        border-radius: 8px;
+        background-image: linear-gradient(to right, var(--tone-5-red-4), var(--tone-6-yellow-1));
+        color: #fff;
+        right: 0;
+        padding: 12px 24px;
+        width: 131px;
+        height: 100%;
+    }
+}

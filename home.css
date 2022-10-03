@@ -1,0 +1,131 @@
+/* Color */
+
+.text-ntl-green {
+    color: var(--btn-1-mint);
+}
+
+.card.card-home-info:focus,
+.card.card-home-info:active,
+.card.card-home-info.active {
+    border: solid 2px #1da578;
+    background-color: #edf8f5;
+}
+
+.card.card-home-info {
+    font: normal var(--en-noto-xxxs) var(--font-family-Noto);
+}
+
+.card.card-home-info p {
+    overflow: hidden;
+    height: 38px;
+}
+
+.home-car-info .col-4 {
+    padding: 5px 5px;
+}
+
+.payment-list {
+    background-color: #ddd;
+}
+
+.product-bay img {
+    width: 55px;
+}
+
+hr.line-bottom-list {
+    height: 20px;
+    background-color: #fff;
+}
+
+
+/* Table */
+
+
+/* .table-main {
+    border: none;
+    border-right: solid 1px rgb(75, 90, 102);
+    border-collapse: separate;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+} */
+
+.table-main thead,
+.table-main tbody {
+    border-bottom-width: 0px;
+}
+
+.link {
+    color: #0d6efd;
+}
+
+.table-main thead th {
+    background-color: rgb(203, 220, 233);
+    border: none;
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+    border-left: 1px solid;
+}
+
+.table-main tbody td {
+    border-left: 1px solid;
+}
+
+.table-main thead th:last-child,
+.table-main tbody td:last-child {
+    border-right: 1px solid;
+}
+
+.table-main tbody td:first-child {
+    border-left: 0px solid;
+}
+
+.table-main tbody td {
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+    white-space: nowrap;
+}
+
+.table {
+    position: relative;
+}
+
+.table-scroll {
+    margin-left: auto;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-bottom: 5px;
+    width: 70%;
+}
+
+.table-main .fix-col {
+    left: 0;
+    position: absolute;
+    top: auto;
+    width: 30%;
+    font-family: var(--font-family-Noto);
+    font-weight: bold;
+}
+
+.table-ins-home::after {
+    content: "";
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+}
+
+.card-follow {
+    border-radius: 20px;
+}
+
+@media (max-width:575px) {
+    .table-scroll {
+        margin-left: auto;
+        overflow-x: scroll;
+        overflow-y: visible;
+        padding-bottom: 5px;
+        width: 70%;
+    }
+}

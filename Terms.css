@@ -1,0 +1,52 @@
+.terms-page .form-terms-head-text {
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--1-txt-1-black);
+}
+.popup-notAceept .modal-dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    margin: 0;
+    width: 384px;
+}
+.popup-notAceept .modal-content {
+    padding: 24px 20px 20px;
+    border-radius: 16px;
+}
+.popup-notAceept .modal-body{
+    padding:0px;
+}
+.popup-notAceept .modal-footer{
+    padding-top:24px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    border:0px;
+}
+
+.fn-pop-text-head {
+    font-family: var(--font-family-Noto);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--1-txt-1-black);
+}
+
+.fn-pop-text-title {
+    font-family: var(--font-family-Noto);
+    font-size: 16px;
+    color: var(--1-txt-1-black);
+    /* height: 52px; */
+    font-style: normal;
+    line-height: 1.63;
+    font-stretch: normal;
+}
+
+@media(max-width:575px){
+    .popup-notAceept .modal-dialog {
+        width: 100%;
+        padding: 20px;
+    }
+}

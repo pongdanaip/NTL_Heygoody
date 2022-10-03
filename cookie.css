@@ -1,0 +1,84 @@
+.fn-cookie {
+	width: 100%;
+	height: 0;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	transition: 0.3s;
+	background-color: var(--bg-9-white);
+	border-top: 1px solid var(--line-7-greylight);
+}
+	.fn-cookie.show {
+		height: 176px;
+	}
+
+	.fn-cookie p {
+		font-size: 14px;
+	}
+		.fn-cookie p > a {
+			text-decoration: underline;
+		}
+
+	.fn-cookie .fn-button {
+		padding-left: 16px;
+		padding-right: 16px;
+		white-space: nowrap;
+	}
+
+#cookieModal .modal-dialog,
+#settingCookieModal .modal-dialog {
+	max-width: unset;
+}
+	#settingCookieModal p > a {
+		text-decoration: underline;
+	}
+
+	#settingCookieModal .modal-footer {
+		justify-content: end;
+	}
+		#settingCookieModal .modal-footer > .fn-btn-S {
+			width: auto;
+			padding-left: 16px;
+			padding-right: 16px;
+			white-space: nowrap;
+		}
+
+.form-check-input:checked {
+	border-color: var(--btn-1-mint);
+	background-color: var(--btn-1-mint);
+}
+.form-check-input:focus {
+    border-color: var(--btn-1-mint);
+    box-shadow: 0 0 0 0.25rem rgb(19 135 93 / 25%);
+}
+
+@media (min-width: 447px) {
+	.fn-cookie.show {
+		height: 153px;
+	}
+}
+
+@media (min-width: 576px) {
+	#cookieModal .modal-dialog,
+	#settingCookieModal .modal-dialog {
+		max-width: 500px;
+	}
+}
+
+@media (min-width: 992px) {
+	.fn-cookie.show {
+		height: 137px;
+	}
+
+	.fn-cookie p {
+		font-size: 16px;
+	}
+
+	#cookieModal .modal-dialog,
+	#settingCookieModal .modal-dialog {
+		max-width: 800px;
+	}
+}
