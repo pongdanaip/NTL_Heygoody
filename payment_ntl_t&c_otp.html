@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="../bootstrap-5.0.2/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../datepicker/dist/picker.css" type="text/css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/font/fonts.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/spacing.css">
+    <link rel="stylesheet" href="../css/ntlInstallment.css">
+
+</head>
+<body>
+    <div class="container-fulid">
+        <div class="container" id="bgnone">
+            <header class="blog-header">
+                <div class="row mp0 flex-nowarp header justify-content-between align-items-center" id="bgnone"
+                     style="margin-top: 0px;">
+                    <div class="col mp0 pt-1" id="bgnone">
+                        <a href="#back">
+                            <img src="../images/icon-other-grey-back.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col mp0 text-center" id="bgnone">
+                        <a href="#icon">
+                            <img class="fn-top-logo" src="../images/logo-horizontal-heygoody-on-white.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col mp0 d-flex justify-content-end align-item-center" id="bgnone">
+                        <a href="#icon">
+                            <img src="../images/icon-other-grey-member.svg" alt="">
+                            <!--<div class="fn-loggedIn-logo">
+                                <span>ธ</span>
+                            </div>
+                            <span class="noto-xxs-reg d-none d-lg-inline-block">ธนาวัฒน์</span>-->
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="container">
+        <form id="needs-validation" novalidate>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-12">
+                    <div class="row pt24-56 justify-content-center">
+                        <div class="col-12 pb32">
+                            <div class="fn-otp-section">
+                                <div class="row">
+                                    <div class="col-12 pb8 noto-s-bold text-center">
+                                        <div class="">
+                                            <label>กรอกรหัส OTP การแบ่งชำระประกันภัย</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pb8 noto-xxs-reg text-center">
+                                        รหัส OTP (รหัสอ้างอิง: XYZ1234)<br />
+                                        ถูกส่งไปที่เบอร์ <span class="fn-otp-phone-num">xxx-xxx-4455</span>
+                                    </div>
+                                    <div class="col-12 pt8 text-center">
+                                        <div class="fn-otp-input-section">
+                                            <input type="text" id="OTP_1" name="OTP_1" class="fn-otp-input noto-l-bold" inputmode="numeric" maxlength="1" autocomplete="off">
+                                            <input type="text" id="OTP_2" name="OTP_2" class="fn-otp-input noto-l-bold" inputmode="numeric" maxlength="1" autocomplete="off">
+                                            <input type="text" id="OTP_3" name="OTP_3" class="fn-otp-input noto-l-bold" inputmode="numeric" maxlength="1" autocomplete="off">
+                                            <input type="text" id="OTP_4" name="OTP_4" class="fn-otp-input noto-l-bold" inputmode="numeric" maxlength="1" autocomplete="off">
+                                            <input type="text" id="OTP_5" name="OTP_5" class="fn-otp-input noto-l-bold" inputmode="numeric" maxlength="1" autocomplete="off">
+                                            <input type="text" id="OTP_6" name="OTP_6" class="fn-otp-input noto-l-bold" inputmode="numeric" maxlength="1" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 fn-pt16 noto-xxs-reg text-center d-none" id="expireOTP">
+                                        <div class="fn-expire-otp">
+                                            <label>รหัส OTP หมดอายุแล้ว</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 fn-pt16 noto-xxs-reg text-center d-none" id="invalidOTP">
+                                        <div class="fn-invalid-otp">
+                                            <label>รหัส OTP ของคุณไม่ถูกต้อง ลองอีกครั้ง</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 pb8">
+                            <button type="button" class="fn-button fn-button-confirm fn-btn-M fn-btn-primary mx-auto" onclick="verifyOTP()">ยืนยัน</button>
+                        </div>
+                        <div class="col-12 pt8 noto-xxs-reg text-center" id="timeCountDown">
+                            <div class="">
+                                <label>ขอรหัสอีกครั้งใน <span class="countdown">59</span> วินาที</label>
+                            </div>
+                        </div>
+                        <div class="col-12 pt8 noto-xxs-bold text-center d-none" id="requestOTP">
+                            <div class="">
+                                <a href="javascript:void(0)" class="fn-requestOTP" onclick="requestNewOTP()"><img src="../images/icon/icon-24-green-reset.svg" class="img-fluid mr4" />ขอรหัส OTP ใหม่</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="../bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/awesomplete.js"></script>
+    <script src="../js/jquery-2.0.3.min.js"></script>
+
+    <script src="../imaskjs-master/packages/imask/src/imask.js" type="text/javascript"></script>
+
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!--<script src="../js/component.js"></script>-->
+    <script>
+        window.onload = function () {
+            document.getElementById("OTP_1").focus();
+            countdownFunc();
+        }
+
+        // OTP input
+        var container = document.getElementsByClassName("fn-otp-input-section")[0];
+        container.onkeyup = function (e) {
+            var target = e.srcElement || e.target;
+            var maxLength = parseInt(target.attributes["maxlength"].value, 10);
+            var myLength = target.value.length;
+            if (myLength >= maxLength) {
+                var next = target;
+                while (next = next.nextElementSibling) {
+                    if (next == null)
+                        break;
+                    if (next.tagName.toLowerCase() === "input") {
+                        next.focus();
+                        break;
+                    }
+                }
+            }
+            // Move to previous field if empty (user pressed backspace)
+            else if (myLength === 0) {
+                var previous = target;
+                while (previous = previous.previousElementSibling) {
+                    if (previous == null)
+                        break;
+                    if (previous.tagName.toLowerCase() === "input") {
+                        previous.focus();
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Countdown function
+        var countdownFunc = function () {
+            var count = 59, timer = setInterval(function () {
+                $(".countdown").html(count--);
+                if (count <= -1) {
+                    clearInterval(timer);
+                    $("#timeCountDown").hide();
+                    $("#requestOTP").removeClass("d-none");
+                    $("#expireOTP").removeClass("d-none");
+                }
+            }, 1000);
+        }
+
+        // request new otp
+        function requestNewOTP() {
+            $("#requestOTP").addClass("d-none");
+            $("#expireOTP").addClass("d-none");
+            $("#invalidOTP").addClass("d-none");
+            $("#timeCountDown").show();
+            $(".countdown").html("59");
+            countdownFunc();
+        }
+
+        // verify otp
+        function verifyOTP() {
+            let otp1 = $("#OTP_1").val();
+            let otp2 = $("#OTP_2").val();
+            let otp3 = $("#OTP_3").val();
+            let otp4 = $("#OTP_4").val();
+            let otp5 = $("#OTP_5").val();
+            let otp6 = $("#OTP_6").val();
+            let otpValue = otp1 + otp2 + otp3 + otp4 + otp5 + otp6;
+            if (otpValue == "999999") {
+                $("#invalidOTP").addClass("d-none");
+            } else {
+                $("#invalidOTP").removeClass("d-none");
+                $("#expireOTP").addClass("d-none");
+            }
+        }
+    </script>
+</body>
+</html>
