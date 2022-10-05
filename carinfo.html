@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Info</title>
+
+    <link rel="stylesheet" href="../bootstrap-5.0.2/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../datepicker/dist/picker.css" type="text/css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/font/fonts.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="../css/spacing.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+
+    <!-- CARINFO ONLY -->
+    <link rel="stylesheet" href="../css/carinfo.css">
+
+    <!-- JavaScript -->
+    <script src="../datepicker/dist/picker.js" type="text/javascript"></script>
+    <script src="../imaskjs-master/packages/imask/src/imask.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <div class="container-fulid">
+        <div class="container" id="bgnone">
+            <header class="blog-header">
+                <div class="row mp0 flex-nowarp header justify-content-between align-items-center" id="bgnone"
+                     style="margin-top: 0px;">
+                    <div class="col mp0 pt-1" id="bgnone">
+                        <a href="#back">
+                            <img src="../images/icon-other-grey-back.svg" alt="" class="top-arrow-left">
+                        </a>
+                    </div>
+                    <div class="col mp0 text-center" id="bgnone">
+                        <a href="#icon">
+                            <img src="../images/logo-horizontal-heygoody-on-white.svg" class="fn-top-logo" alt="">
+                        </a>
+                    </div>
+                    <div class="col mp0 d-flex justify-content-end align-item-center" id="bgnone">
+                        <a href="#icon">
+                            <img src="../images/icon-other-grey-member.svg" alt="" class="top-icon-user">
+                            <span class="noto-xxs-reg d-none d-lg-inline-block">เข้าสู่ระบบ</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="progress carinfo" style="height: 4px;">
+        <div id="progress" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="container pb32-96">
+        <form id="needs-validation" novalidate>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <!-- START: CARBARNDS-->
+                    <div id="form-carinfo-barnds">
+                        <div class="row">
+                            <div class="col-12 pt24-56">
+                                <div class="form-title-24 pb24">
+                                    <label>ยี่ห้อรถ</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="fn-carinfo-brand">
+                                    <div class="row g-0 fn-brand-g">
+                                        <div class="fn-rdo-box fn-rdo-box-border fn-rdo-text fn-brand">
+                                            <input type="radio" name="fn-carbrand" id="fn-carbrands-toyota" value="1">
+                                            <label for="fn-carbrands-toyota" class="">
+                                                <img src="../images/carinfo/image-logo-car-toyota@3x.png">
+                                                <div class="fn-text-brand">
+                                                    <span>Toyota</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="fn-rdo-box fn-rdo-box-border fn-rdo-text fn-brand">
+                                            <input type="radio" name="fn-carbrand" id="fn-carbrands-honda" value="2">
+                                            <label for="fn-carbrands-honda" class="">
+                                                <img src="../images/carinfo/image-logo-car-honda@3x.png">
+                                                <div class="fn-text-brand">
+                                                    <span>Honda</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="fn-rdo-box fn-rdo-box-border fn-rdo-text fn-brand">
+                                            <input type="radio" name="fn-carbrand" id="fn-carbrands-isuzu" value="3">
+                                            <label for="fn-carbrands-isuzu" class="">
+                                                <img src="../images/carinfo/image-logo-car-isuzu@3x.png">
+                                                <div class="fn-text-brand">
+                                                    <span>Isuzu</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="fn-rdo-box fn-rdo-box-border fn-rdo-text fn-brand">
+                                            <input type="radio" name="fn-carbrand" id="fn-carbrands-mazda" value="4">
+                                            <label for="fn-carbrands-mazda" class="">
+                                                <img src="../images/carinfo/image-logo-car-mazda@3x.png">
+                                                <div class="fn-text-brand">
+                                                    <span>Mazda</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="fn-rdo-box fn-rdo-box-border fn-rdo-text fn-brand">
+                                            <input type="radio" name="fn-carbrand" id="fn-carbrands-mitsu" value="5">
+                                            <label for="fn-carbrands-mitsu" class="">
+                                                <img src="../images/carinfo/image-logo-car-mitsubishi@3x.png">
+                                                <div class="fn-text-brand">
+                                                    <span>Mitsubishi</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="fn-rdo-box fn-rdo-box-border fn-rdo-text fn-brand">
+                                            <input type="radio" name="fn-carbrand" id="fn-carbrands-nissan" value="6">
+                                            <label for="fn-carbrands-nissan" class="">
+                                                <img src="../images/carinfo/image-logo-car-nissan@3x.png">
+                                                <div class="fn-text-brand">
+                                                    <span>Nissan</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="fn-rdo-box fn-rdo-box-border fn-rdo-text fn-brand">
+                                            <input type="radio" name="fn-carbrand" id="fn-carbrands-ford" value="7">
+                                            <label for="fn-carbrands-ford" class="">
+                                                <img src="../images/carinfo/image-logo-car-ford@3x.png">
+                                                <div class="fn-text-brand">
+                                                    <span>Ford</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="fn-rdo-box fn-rdo-box-border fn-rdo-text fn-brand">
+                                            <input type="radio" name="fn-carbrand" id="fn-carbrands-suzuki" value="8">
+                                            <label for="fn-carbrands-suzuki" class="">
+                                                <img src="../images/carinfo/image-logo-car-suzuki@3x.png">
+                                                <div class="fn-text-brand">
+                                                    <span>Suzuki</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="fn-rdo-box fn-rdo-box-border fn-rdo-text fn-brand">
+                                            <input type="radio" name="fn-carbrand" id="fn-carbrands-benz" value="9">
+                                            <label for="fn-carbrands-benz" class="">
+                                                <img src="../images/carinfo/image-logo-car-benz@3x.png">
+                                                <div class="fn-text-benz">
+                                                    <span>Mercedes Benz</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="fn-rdo-box fn-rdo-box-border fn-rdo-text fn-brand">
+                                            <input type="radio" name="fn-carbrand" id="fn-carbrands-chevrolet" value="10">
+                                            <label for="fn-carbrands-chevrolet" class="">
+                                                <img src="../images/carinfo/image-logo-car-chevrolet@3x.png">
+                                                <div class="fn-text-brand">
+                                                    <span>Chevrolet</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating fn-form-select">
+                                            <select id="car-brand" class="form-select empty" aria-label="Default select example" required>
+                                                <option value="">เลือกยี่ห้อรถอื่นๆ</option>
+                                                <option value="1">Toyota</option>
+                                                <option value="2">Honda</option>
+                                                <option value="3">Isuzu</option>
+                                                <option value="4">Mazda</option>
+                                                <option value="5">Mitsubishi</option>
+                                                <option value="6">Nissan</option>
+                                                <option value="7">Ford</option>
+                                                <option value="8">Suzuki</option>
+                                                <option value="9">Mercedes Benz</option>
+                                                <option value="10">Chevrolet</option>
+                                                <option value="11">Alf</option>
+                                            </select>
+                                            <label for="form-select">เลือกยี่ห้อรถอื่นๆ</label>
+                                            <div class="fn-valid-feedback">เลือกยี่ห้อรถ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: CARBARNDS-->
+                    <!-- START: CARMODEL-->
+                    <div id="ddlmodel2">
+                        <div class="row mt56">
+                            <div class="col-12">
+                                <div class="form-title-24 mb12">
+                                    <label>รุ่นรถ</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating fn-form-group fn-form-select mt12 mb0">
+                                    <select id="car-model" class="form-select empty" aria-label="Default select example" required>
+                                        <option value="">เลือกรุ่นรถ</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="form-select">เลือกรุ่นรถ</label>
+                                    <div class="fn-valid-feedback">เลือกรุ่นรถ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: CARMODEL-->
+                    <!-- START: CARYEAR -->
+                    <div id="ddlyear">
+                        <div class="row mt56">
+                            <div class="col-12">
+                                <div class="form-title-24 pb12">
+                                    <label>ปีผลิตรุ่นรถ</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating fn-form-group fn-form-select mb0">
+                                    <select id="carinfo-year" class="form-select empty" aria-label="Default select example" required>
+                                        <option value="">เลือกปีผลิตรุ่นรถ</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="carinfo-year">เลือกปีผลิตรุ่นรถ</label>
+                                    <div class="fn-valid-feedback">ยี่ห้อรถ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: CARYEAR -->
+                    <!-- START: CARDETAILS -->
+                    <div id="ddlsubmodel">
+                        <div class="row mt56">
+                            <div class="col-12">
+                                <div class="form-title-24 pb12">
+                                    <label>รายละเอียดรุ่นรถ</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="fn-carinfo-detail">
+                                    <div class="fn-rdo-box fn-rdo-m fn-rdo-box-border fn-rdo-text">
+                                        <input type="radio" name="fn-carinfo-details" id="fn-details-1">
+                                        <label for="fn-details-1" class="">
+                                            <span>F30 Sedam 4 dr Steptronic 8sp RWD 2.0DTTi (Modern)</span>
+                                        </label>
+                                        <input type="radio" name="fn-carinfo-details" id="fn-details-2">
+                                        <label for="fn-details-2" class="">
+                                            <span>F30 Sedam 4 dr Steptronic 8sp RWD 2.0DTTi (Luxury)</span>
+                                        </label>
+                                        <input type="radio" name="fn-carinfo-details" id="fn-details-3">
+                                        <label for="fn-details-3" class="">
+                                            <span>F34 Sedan 4dr Gran Turismo Steptronic 8sp RWD 2.0DTTi (Sport)</span>
+                                        </label>
+                                        <input type="radio" name="fn-carinfo-details" id="fn-details-4">
+                                        <label for="fn-details-4" class="">
+                                            <span>F30 Sedan 4dr Steptronic 8sp RWD 2.0DTTi (Luxury)</span>
+                                        </label>
+                                        <input type="radio" name="fn-carinfo-details" id="fn-details-5">
+                                        <label for="fn-details-5" class="">
+                                            <span>F34 Sedan 4dr Gran Turismo Steptronic 8sp RWD 2.0DTTi (Sport)</span>
+                                        </label>
+                                        <input type="radio" name="fn-carinfo-details" id="fn-details-6">
+                                        <label for="fn-details-6" class="mb0">
+                                            <span>F34 Sedan 4dr Gran Turismo Steptronic 8sp RWD 2.0DTTi (Sport)</span>
+                                        </label>
+                                        <div class="fn-valid-feedback"></div>
+                                    </div>
+                                </div>                             
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: CARDETAILS -->
+                    <!-- START: CUSTOMCAR -->
+                    <div id="rdoobjective">
+                        <div class="row mt56">
+                            <div class="col-12">
+                                <div class="form-title-24 pb12 fn-tooltip fn-tooltip-form">
+                                    <label>การแต่งรถ</label>
+                                    <span class="fn-tooltip-btn"></span>
+                                    <div class="fn-tooltip-fake d-none"></div>
+                                    <div id="carcustom-tooltip" class="fn-tooltip-block">
+                                        <div class="p-3">
+                                            การตกแต่งรวมไปถึงการดัดแปลง หรือปรับปรุงชิ้นส่วนต่าง ๆ ไม่ว่าจะเป็นเครื่องยนต์ รูปลักษณ์ภายนอก ภายใน ประสิทธิภาพ นอกเหนือจากมาตรฐานโรงงาน
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="fn-carinfo-custom">
+                                    <div class="fn-rdo-box fn-rdo-l fn-rdo-box-border fn-rdo-text">
+                                        <input type="radio" name="fn-carcustom" id="fn-custom-yes">
+                                        <label for="fn-custom-yes" class="">
+                                            <span>แต่ง</span>
+                                        </label>
+                                        <input type="radio" name="fn-carcustom" id="fn-custom-no">
+                                        <label for="fn-custom-no" class="">
+                                             <span>ไม่แต่ง</span>
+                                        </label>
+                                    </div>
+                                </div>                             
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: CUSTOMCAR -->
+                    <!-- START: CARUSE -->
+                    <div id="rdodetail">
+                        <div class="row mt56">
+                            <div class="col-12">
+                                <div class="form-title-24 fn-tooltip fn-tooltip-form pb12">
+                                    <label>การใช้รถ</label>
+                                    <span class="fn-tooltip-btn"></span>
+                                    <div class="fn-tooltip-fake d-none"></div>
+                                    <div id="caruse-tooltip" class="fn-tooltip-block">
+                                        <div class="p-3">
+                                            รถยนต์ที่ใช้งานในเชิงพาณิชย์ หมายถึง รถที่ใช้รับจ้าง เพื่อการขนส่งผู้โดยสาร หรือบรรทุกสินค้า เพื่อประโยชน์ทางการค้า หรือธุรกิจ 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="fn-carinfo-use">
+                                    <div class="fn-rdo-box fn-rdo-l fn-rdo-box-border fn-rdo-text">
+                                        <input type="radio" name="fn-caruse" id="fn-caruse-personal">
+                                        <label for="fn-caruse-personal" class="">
+                                            <span>ใช้ส่วนตัว</span>
+                                        </label>
+                                        <input type="radio" name="fn-caruse" id="fn-caruse-commerce">
+                                        <label for="fn-caruse-commerce" class="">
+                                            <span>ใช้เพื่อการพาณิชย์</span>
+                                        </label>
+                                    </div>
+                                </div>                             
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: CARUSE -->
+                    <!-- START: CAR insurance -->
+                    <div id="ddlinsu">
+                        <div class="row mt56">
+                            <div class="col-12">
+                                <div class="form-title-24 pb12">
+                                    <label>บริษัทประกันรถยนต์ล่าสุด</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="fn-carinfo-insurance">
+                                    <div class="form-floating fn-form-group fn-form-select">
+                                        <select id="carinfo-insurance" name="carinfo-insurance" class="form-select empty" aria-label="Default select example" required>
+                                            <option value="">บริษัทประกันรถยนต์ล่าสุด</option>
+                                            <option value="1">วิริยะประกันภัย</option>
+                                            <option value="2">คุ้มภัยโตเกียวมารีนประกันภัย</option>
+                                            <option value="3">กรุงเทพประกันภัย</option>
+                                            <option value="4">เมืองไทยประกันภัย</option>
+                                            <option value="5">เมืองไทยประกันภัย</option>
+                                            <option value="6">ธนชาตประกันภัย</option>
+                                            <option value="7">แอลเอ็มจีประกันภัย</option>
+                                            <option value="8">ทิพยประกันภัย</option>
+                                            <option value="9">ประกันภัยไทยวิวัฒน์</option>
+                                            <option value="10">อาคเนย์ประกันภัย</option>
+                                            <option value="11">เอ็มเอสไอจีประกันภัย</option>
+                                            <option value="12">อลิอันซ์ อยุธยา ประกันภัย</option>
+                                            <option value="13">ชับบ์สามัคคีประกันภัย</option>
+                                            <option value="14">กรุงไทยพานิชประกันภัย</option>
+                                            <option value="15">นำสินประกันภัย</option>
+                                            <option value="16">ไทยประกันภัย</option>
+                                            <option value="17">ซมโปะประกันภัย</option>
+                                        </select>
+                                        <label for="carinfo-insurance">บริษัทประกันรถยนต์ล่าสุด</label>
+                                    </div>
+                                    <div class="fn-rdo-box fn-rdo-l fn-rdo-box-border fn-rdo-text">
+                                        <input type="radio" name="fn-carinfo-insurance" id="fn-insurance-no">
+                                        <label for="fn-insurance-no" class="">
+                                            <!-- <div class="check"><span></span></div> -->
+                                            <span>ประกันหมดอายุแล้ว / ไม่มีประกันรถยนต์</span>
+                                        </label>
+                                    </div>
+                                </div>                             
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: CAR insurance -->
+                    <!-- START: CAR expiryyear -->
+                    <div id="yearnow">
+                        <div class="row mt32-56">
+                            <div class="col-12">
+                                <div class="form-title-24 pb12">
+                                    <label>กรมธรรม์ของคุณคุ้มครองปีไหน</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="fn-carinfo-expiryyear">
+                                    <div class="fn-rdo-box fn-rdo-l fn-rdo-box-border fn-rdo-text">
+                                        <input type="radio" name="fn-carinfo-expiryyear" id="fn-expiryyear-1">
+                                        <label for="fn-expiryyear-1" class="">
+                                            <span>ปีนี้</span>
+                                        </label>
+                                    </div>
+                                    <div class="fn-rdo-box fn-rdo-l fn-rdo-box-border fn-rdo-text">
+                                        <input type="radio" name="fn-carinfo-expiryyear" id="fn-expiryyear-2">
+                                        <label for="fn-expiryyear-2" class="">
+                                            <span>ปีหน้า</span>
+                                        </label>
+                                    </div>
+                                </div>                             
+                            </div>
+                            <div class="col-12 fn-center mt56" align="center">
+                                <button class="fn-button fn-btn-L fn-btn-primary">แสดงแผนประกัน</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: CAR expiryyear -->
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="../bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/awesomplete.js"></script>
+    <script src="../js/jquery-2.0.3.min.js"></script>
+    <script src="../datepicker/dist/picker.js" type="text/javascript"></script>
+    
+    <script src="../imaskjs-master/packages/imask/src/imask.js" type="text/javascript"></script>
+    
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/component.js"></script>
+    
+    <script src="../js/carinfo.js"></script>
+
+</body>
+</html>
