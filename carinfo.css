@@ -1,3 +1,11 @@
+.fn-100vh {
+    height: 98vh;
+}
+
+.fn-center {
+    justify-content: center;
+}
+
 /* Progress Bar */
 .progress {
     position: sticky;
@@ -18,12 +26,13 @@
 
 /* DIABLE SEC */
 #form-carinfo-model,
-#form-carinfo-year,
-#form-carinfo-details,
-#form-carinfo-custom,
-#form-carinfo-use,
-#form-carinfo-insurance,
-#form-carinfo-expiryyear {
+#ddlmodel2,
+#ddlyear,
+#ddlsubmodel,
+#rdoobjective,
+#rdodetail,
+#ddlinsu,
+#yearnow {
     display: none;
 }
 
