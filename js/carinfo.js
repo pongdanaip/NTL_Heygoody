@@ -115,7 +115,7 @@ form_carbarnds.addEventListener("change", (event) => {
     $("#ddlmodel2").addClass("fn-100vh");
     document.getElementById('ddlmodel2').style.display = "block";
     setTimeout(function () {
-        document.getElementById('ddlmodel2').scrollIntoView({ behavior: 'smooth', block: "nearest" });
+        document.getElementById('ddlmodel2').scrollIntoView({ behavior: 'smooth', block: "nearest"});
     }, 300);
     moveProgress(25);
 });
@@ -173,15 +173,14 @@ form_caruse.addEventListener("change", (event) => {
 
 form_carinsurance.addEventListener("change", (event) => {
     $("#ddlinsu").removeClass("fn-100vh");
-    $("#yearnow").addClass("fn-100vh");
     document.getElementById('yearnow').style.display = "block";
     setTimeout(function () {
-        document.getElementById('yearnow').scrollIntoView({ behavior: 'smooth', block: "nearest" });
+        document.getElementById('yearnow').scrollIntoView({ behavior: 'smooth' });
     }, 300);
     moveProgress(100);
 });
 
 
 $(document).ready(function () {
-    $("#form-carinfo-barnds").addClass("fn-100vh");
+    //$("#form-carinfo-barnds").addClass("fn-100vh");
 });
