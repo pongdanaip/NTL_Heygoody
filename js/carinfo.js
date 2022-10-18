@@ -173,10 +173,11 @@ form_caruse.addEventListener("change", (event) => {
 
 form_carinsurance.addEventListener("change", (event) => {
     $("#ddlinsu").removeClass("fn-100vh");
+    $("#yearnow").css("height", "69vh");
     document.getElementById('yearnow').style.display = "block";
-    setTimeout(function () {
+    /*setTimeout(function () {
         document.getElementById('yearnow').scrollIntoView({ behavior: 'smooth' });
-    }, 300);
+    }, 300);*/
     moveProgress(100);
 });
 
