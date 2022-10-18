@@ -113,6 +113,7 @@ const myInputs_expiryyear = form_expiryyear.querySelectorAll("input,select");
 form_carbarnds.addEventListener("change", (event) => {
     $("#form-carinfo-barnds").removeClass("fn-100vh");
     $("#ddlmodel2").addClass("fn-100vh");
+    $("#fn-content-carinfo").removeClass("pb32-96");
     document.getElementById('ddlmodel2').style.display = "block";
     setTimeout(function () {
         document.getElementById('ddlmodel2').scrollIntoView({ behavior: 'smooth', block: "nearest"});
@@ -124,6 +125,7 @@ form_carbarnds.addEventListener("change", (event) => {
 form_carmodel.addEventListener("change", (event) => {
     $("#ddlmodel2").removeClass("fn-100vh");
     $("#ddlyear").addClass("fn-100vh");
+    $("#fn-content-carinfo").removeClass("pb32-96");
     document.getElementById('ddlyear').style.display = "block";
     setTimeout(function () {
         document.getElementById('ddlyear').scrollIntoView({ behavior: 'smooth', block: "nearest" });
@@ -134,6 +136,7 @@ form_carmodel.addEventListener("change", (event) => {
 form_caryear.addEventListener("change", (event) => {
     $("#ddlyear").removeClass("fn-100vh");
     $("#ddlsubmodel").addClass("fn-100vh");
+    $("#fn-content-carinfo").removeClass("pb32-96");
     document.getElementById('ddlsubmodel').style.display = "block";
     setTimeout(function () {
         document.getElementById('ddlsubmodel').scrollIntoView({ behavior: 'smooth', block: "nearest" });
@@ -144,6 +147,7 @@ form_caryear.addEventListener("change", (event) => {
 form_cardetails.addEventListener("change", (event) => {
     $("#ddlsubmodel").removeClass("fn-100vh");
     $("#rdoobjective").addClass("fn-100vh");
+    $("#fn-content-carinfo").removeClass("pb32-96");
     document.getElementById('rdoobjective').style.display = "block";
     setTimeout(function () {
         document.getElementById('rdoobjective').scrollIntoView({ behavior: 'smooth', block: "nearest" });
@@ -154,6 +158,7 @@ form_cardetails.addEventListener("change", (event) => {
 form_carcustom.addEventListener("change", (event) => {
     $("#rdoobjective").removeClass("fn-100vh");
     $("#rdodetail").addClass("fn-100vh");
+    $("#fn-content-carinfo").removeClass("pb32-96");
     document.getElementById('rdodetail').style.display = "block";
     setTimeout(function () {
         document.getElementById('rdodetail').scrollIntoView({ behavior: 'smooth', block: "nearest" });
@@ -164,6 +169,7 @@ form_carcustom.addEventListener("change", (event) => {
 form_caruse.addEventListener("change", (event) => {
     $("#rdodetail").removeClass("fn-100vh");
     $("#ddlinsu").addClass("fn-100vh");
+    $("#fn-content-carinfo").removeClass("pb32-96");
     document.getElementById('ddlinsu').style.display = "block";
     setTimeout(function () {
         document.getElementById('ddlinsu').scrollIntoView({ behavior: 'smooth', block: "nearest" });
@@ -173,11 +179,12 @@ form_caruse.addEventListener("change", (event) => {
 
 form_carinsurance.addEventListener("change", (event) => {
     $("#ddlinsu").removeClass("fn-100vh");
-    $("#yearnow").css("height", "69vh");
+    $("#yearnow").addClass("fn-100vh");
+    $("#fn-content-carinfo").removeClass("pb32-96");
     document.getElementById('yearnow').style.display = "block";
-    /*setTimeout(function () {
-        document.getElementById('yearnow').scrollIntoView({ behavior: 'smooth' });
-    }, 300);*/
+    setTimeout(function () {
+        document.getElementById('yearnow').scrollIntoView({ behavior: 'smooth', block: "nearest" });
+    }, 300);
     moveProgress(100);
 });
 
