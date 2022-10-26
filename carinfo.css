@@ -1,3 +1,16 @@
+.modal.animate__animated.animate__fadeIn,
+.modal.animate__animated.animate__fadeOut {
+    display: block !important;
+}
+
+.fn-modal-in {
+    --animate-duration: 0.3s;
+}
+
+.fn-modal-out {
+    --animate-duration: 0.2s;
+}
+
 .fn-100vh {
     height: 96vh;
 }
