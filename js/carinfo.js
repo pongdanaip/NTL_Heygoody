@@ -11,7 +11,6 @@ $(".modal.animate__animated").on('hidden.bs.modal', function () {
         $(this).removeClass('animate__fadeIn fn-modal-in');
         $(this).addClass('animate__fadeOut fn-modal-out');
         $("body").find(".fn-modal-fade").removeClass("show");
-        $("body").addClass("fn-body-modal");
         setTimeout(function () {
             $(".modal.animate__animated").removeClass('animate__fadeOut fn-modal-out');
             $("body").removeClass("fn-body-modal")
