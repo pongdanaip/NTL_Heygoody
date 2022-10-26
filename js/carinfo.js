@@ -1,8 +1,8 @@
-$(".modal.animate__animated").on('show.bs.modal', function () {
+$(".modal.animate__animated").on('shown.bs.modal', function () {
     if (!$(this).hasClass('animate__fadeIn')) {
         $(this).removeClass('animate__fadeOut fn-modal-out');
         $(this).addClass('animate__fadeIn fn-modal-in');
-        $("body").append("<div class='modal-backdrop fn-modal-fade show'></div>");
+        $(".modal-backdrop.fn-modal-fade").addClass("show");
     }
 });
 
@@ -14,7 +14,7 @@ $(".modal.animate__animated").on('hidden.bs.modal', function () {
         $("body").addClass("fn-body-modal");
         setTimeout(function () {
             $(".modal.animate__animated").removeClass('animate__fadeOut fn-modal-out');
-            $("body").find(".fn-modal-fade").remove();
+            $("body").removeClass("fn-body-modal")
         }, 250);
     }
 });
