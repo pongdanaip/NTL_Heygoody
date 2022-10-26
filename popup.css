@@ -83,10 +83,14 @@
     
     .fn-demo-modal > .modal-dialog {
         max-width: 792px;
+        max-width: fit-content;
+        margin: 1.75rem auto;
+        height: auto;
     }
 
     .fn-demo-modal .modal-dialog > .modal-content {
         width: 792px;
         height: 675px;
+        border-radius: var(--border-rad-popup);
     }
 }
