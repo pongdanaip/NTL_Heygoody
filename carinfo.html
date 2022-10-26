@@ -23,10 +23,51 @@
     <!-- CARINFO ONLY -->
     <link rel="stylesheet" href="carinfo.css">
 
+<!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     
 </head>
 <body>
+    
+        <!-- Demo Modal -->
+    <div class="modal animate__animated" id="demo-modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Demo Modal title 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    DEMO MODAL ANIMATE
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Modal -->
+    <div class="modal animate__animated" id="demo-modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Demo Modal title 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    DEMO MODAL ANIMATE
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
     <div class="container-fulid">
         <div class="container" id="bgnone">
             <header class="blog-header">
@@ -43,7 +84,7 @@
                         </a>
                     </div>
                     <div class="col mp0 d-flex justify-content-end align-item-center" id="bgnone">
-                        <a href="#icon">
+                        <a href="#icon" type="button" data-bs-toggle="modal" data-bs-target="#demo-modal-1">
                             <img src="images/icon-other-grey-member.svg" alt="" class="top-icon-user">
                             <span class="noto-xxs-reg d-none d-lg-inline-block">เข้าสู่ระบบ</span>
                         </a>
@@ -53,7 +94,9 @@
         </div>
     </div>
     <div class="progress carinfo" style="height: 4px;">
-        <div id="progress" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+       <div id="progress" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
     </div>
    <div class="container pb32-96" id="fn-content-carinfo">
         <form id="needs-validation" novalidate>
