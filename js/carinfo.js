@@ -1,3 +1,22 @@
+$(".modal.animate__animated").on('shown.bs.modal', function () {
+    if (!$(this).hasClass('animate__fadeIn')) {
+        $(this).removeClass('animate__fadeOut fn-modal-out');
+        $(this).addClass('animate__fadeIn fn-modal-in');
+    }
+});
+
+$(".modal.animate__animated").on('hidden.bs.modal', function () {
+    if (!$(this).hasClass('animate__fadeOut')) {
+        $(this).removeClass('animate__fadeIn fn-modal-in');
+        $(this).addClass('animate__fadeOut fn-modal-out');
+        $("body").append("<div class='modal-backdrop fade show fn-modal-fade'></div>");
+        setTimeout(function () {
+            $(".modal.animate__animated").removeClass('animate__fadeOut fn-modal-out');
+            $("body").find(".fn-modal-fade").remove();
+        }, 220);
+    }
+});
+
 // Progress Bar
 var width = 12.5;
 function moveProgress(elm) {
