@@ -4,11 +4,31 @@
 }
 
 .fn-modal-in {
-    --animate-duration: 0.3s;
+    --animate-duration: 300ms;
 }
 
 .fn-modal-out {
-    --animate-duration: 0.2s;
+    --animate-duration: 250ms;
+}
+
+.modal-backdrop.fn-modal-fade{
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0ms 250ms, opacity 250ms 0ms;
+    transition: visibility 0ms 250ms, opacity 250ms 0ms;
+    
+}
+
+.modal-backdrop.show.fn-modal-fade {
+    visibility: visible;
+    opacity: 0.5;
+    -webkit-transition: visibility 0ms 0ms, opacity 300ms 0ms;
+    transition: visibility 0ms 0ms, opacity 300ms 0ms;
+}
+
+.fn-body-modal {
+    overflow: hidden;
+    padding-right: 17px;
 }
 
 .fn-100vh {
