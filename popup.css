@@ -70,4 +70,13 @@
     .modal-dialog.fn-modal-2button > .modal-content {
         width: 384px;
     }
+    
+    .fn-demo-modal > .modal-dialog {
+        max-width: 792px;
+    }
+
+    .fn-demo-modal .modal-dialog > .modal-content {
+        width: 792px;
+        height: 675px;
+    }
 }
