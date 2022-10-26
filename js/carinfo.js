@@ -1,4 +1,4 @@
-$(".modal.animate__animated").on('shown.bs.modal', function () {
+$(".modal.animate__animated").on('show.bs.modal', function () {
     if (!$(this).hasClass('animate__fadeIn')) {
         $(this).removeClass('animate__fadeOut fn-modal-out');
         $(this).addClass('animate__fadeIn fn-modal-in');
