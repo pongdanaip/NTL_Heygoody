@@ -237,4 +237,8 @@
         padding: 12px 12px 12px 12px;
     }
     
+    .modal-backdrop.fn-modal-fade.show.fn-modal-fullscreen {
+        display: none;
+    }
+    
 }
