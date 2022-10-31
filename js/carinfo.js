@@ -3,7 +3,7 @@ $(".modal.animate__animated").on('shown.bs.modal', function () {
         $(this).removeClass('animate__fadeOut fn-modal-out');
         $(this).addClass('animate__fadeIn fn-modal-in');
         $(".modal-backdrop.fn-modal-fade").addClass("show");
-        if($(this).find("modal-content").hasClass("modal-fullscreen-lg-down")){
+        if($(this).find("modal-dialog modal-content").hasClass("modal-fullscreen-lg-down")){
             $(".modal-backdrop.fn-modal-fade").addClass("fn-modal-fullscreen");
         }
     }
@@ -14,7 +14,7 @@ $(".modal.animate__animated").on('hidden.bs.modal', function () {
         $(this).removeClass('animate__fadeIn fn-modal-in');
         $(this).addClass('animate__fadeOut fn-modal-out');
         $(".modal-backdrop.fn-modal-fade").removeClass("show")
-        if($(this).find("modal-content").hasClass("modal-fullscreen-lg-down")){
+        if($(this).find("modal-dialog modal-content").hasClass("modal-fullscreen-lg-down")){
             $(".modal-backdrop.fn-modal-fade").removeClass("fn-modal-fullscreen");
         }
         setTimeout(function () {
