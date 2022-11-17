@@ -1,7 +1,7 @@
 $(window).load(function() {
     setTimeout(function() { 
         $("#fn-autofocus").focus();
-    }, 500);
+    }, 2000);
 });
 
 $(".modal.animate__animated").on('shown.bs.modal', function () {
