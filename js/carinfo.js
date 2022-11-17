@@ -1,3 +1,7 @@
+$(window).load(function() {
+    $("#fn-autofocus").focus();
+});
+
 $(".modal.animate__animated").on('shown.bs.modal', function () {
     if (!$(this).hasClass('animate__fadeIn')) {
         $(this).removeClass('animate__fadeOut fn-modal-out');
