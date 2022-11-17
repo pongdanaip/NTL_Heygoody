@@ -1,5 +1,7 @@
 $(window).load(function() {
-    $("#fn-autofocus").focus();
+    setTimeout(function() { 
+        $("#fn-autofocus").focus();
+    }, 500);
 });
 
 $(".modal.animate__animated").on('shown.bs.modal', function () {
